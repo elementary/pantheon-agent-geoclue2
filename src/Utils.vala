@@ -20,40 +20,8 @@
  */
 
 namespace Ag.Utils {
-    public const string GNOME_SESSION_MANAGER_IFACE = "org.gnome.SessionManager";
-    public const string GNOME_SESSION_MANAGER_PATH = "/org/gnome/SessionManager";
-
     public const string GEOCLUE2_MANAGER_IFACE = "org.freedesktop.GeoClue2";
     public const string GEOCLUE2_MANAGER_PATH = "/org/freedesktop/GeoClue2/Manager";
-
-    public async SessionClient? register_with_session (string app_id) {
-        SessionClient? sclient = null;
-        ObjectPath? path = null;
-
-        string? start_id = Environment.get_variable ("DESKTOP_AUTOSTART_ID");
-        if (start_id != null) {
-            Environment.unset_variable ("DESKTOP_AUTOSTART_ID");
-        } else {
-            start_id = "";
-        }
-
-        try {
-            SessionManager? session = yield Bus.get_proxy (BusType.SESSION, GNOME_SESSION_MANAGER_IFACE, GNOME_SESSION_MANAGER_PATH);
-            path = yield session.register_client (app_id, start_id);
-        } catch (Error e) {
-            warning ("Error registering client: %s", e.message);
-            return null;
-        }
-
-        try {
-            sclient = yield Bus.get_proxy (BusType.SESSION, GNOME_SESSION_MANAGER_IFACE, path);
-        } catch (Error e) {
-            warning ("Unable to get Private Client proxy: %s", e.message);
-            return null;
-        }
-
-        return sclient;
-    }
 
     public async void register_with_geoclue (string app_id) {
         try {

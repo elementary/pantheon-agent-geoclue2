@@ -20,56 +20,70 @@
  */
 
 namespace Ag {
-    public class Agent {
+    public class Agent : Application, GeoClue2Agent {
         private const string app_id = "org.pantheon.agent-geoclue2";
 
+        public uint max_accuracy_level { get { return GeoClue2.AccuracyLevel.EXACT; } }
+        private MainLoop loop;
+		private uint object_id;
+		private bool bus_registered = false;
+
         public Agent () {
-            register_with_session.begin ((obj, res)=> {
-                bool success = register_with_session.end (res);
-                if (!success) {
-                    warning ("Failed to register with Session manager");
-                }
-                
-                register_with_geoclue.begin ();
-            });
+            Object (application_id: app_id);
+            loop = new MainLoop ();                  
         }
 
-        private async bool register_with_session () {
-            var sclient = yield Utils.register_with_session (app_id);
-            if (sclient == null) {
-                return false;
-            }
+        public override void activate () {
+            loop.run ();
+        }
+               
+	    void on_name (DBusConnection conn) {
+		    try {
+			    if (bus_registered) {
+				    conn.unregister_object (object_id);
+				    bus_registered = false;
+			    }
+				
+				debug ("Adding agent...");
+			    object_id = conn.register_object ("/org/freedesktop/GeoClue2/Agent", (GeoClue2Agent)this);
+			    bus_registered = true;
+			    register_with_geoclue ();
+		    } catch (Error e) {
+			    error ("Error while registering the agent: %s \n", e.message);
+		    }
+	    }
 
-            sclient.query_end_session.connect (session_respond);
-            sclient.end_session.connect (session_respond);
-            sclient.stop.connect (session_stop);
+	    private void watch (DBusConnection connection) {
+		    Bus.watch_name (BusType.SYSTEM, "org.freedesktop.GeoClue2", BusNameWatcherFlags.AUTO_START, on_name);
+	    }
 
-            return true;
+	    public override bool dbus_register (DBusConnection connection, string object_path) throws Error {
+		    base.dbus_register (connection, object_path);
+		    watch (connection);
+
+		    return true;
+	    }
+
+	    public override void dbus_unregister (DBusConnection connection, string object_path) {
+		    if (bus_registered) {
+			    connection.unregister_object (object_id);
+			}
+		    base.dbus_unregister (connection, object_path);
+	    }
+        
+        public void authorize_app (string id, uint req_accuracy, out bool authorized, out uint allowed_accuracy) {
+			debug ("Request for '%s' at level '%u'", id, req_accuracy);
+            authorized = true;
+            allowed_accuracy = req_accuracy;
         }
 
         private async void register_with_geoclue () {
             yield Utils.register_with_geoclue (app_id);
         }
-
-        private void session_respond (SessionClient sclient, uint flags) {
-            try {
-                sclient.end_session_response (true, "");
-            } catch (Error e) {
-                warning ("Unable to respond to session manager: %s", e.message);
-            }
-        }
-
-        private void session_stop () {
-            Gtk.main_quit ();
-        }
     }
 
     public static int main (string[] args) {
-        Gtk.init (ref args);
-
         var agent = new Agent ();
-
-        Gtk.main ();
-        return 0;
+        return agent.run (args);
     }
 }

@@ -20,23 +20,16 @@
  */
 
 namespace Ag {
-    [DBus (name = "org.gnome.SessionManager")]
-    public interface SessionManager : Object {
-        public abstract async ObjectPath register_client (string app_id, string client_start_id) throws IOError;
-    }
-
-    [DBus (name = "org.gnome.SessionManager.ClientPrivate")]
-    public interface SessionClient : Object {
-        public abstract void end_session_response (bool is_ok, string reason) throws IOError;
-
-        public signal void stop ();
-        public signal void query_end_session (uint flags);
-        public signal void end_session (uint flags);
-        public signal void cancel_end_session ();
-    }
-
     [DBus (name = "org.freedesktop.GeoClue2.Manager")]
     public interface GeoClue2Manager : Object {
         public abstract async void add_agent (string id) throws IOError;
     }
+
+    [DBus (name = "org.freedesktop.GeoClue2.Agent")]
+	public interface GeoClue2Agent : GLib.Object {
+        [DBus (name = "AuthorizeApp")]
+		public abstract void authorize_app(string desktop_id, uint req_accuracy_level, out bool authorized, out uint allowed_accuracy_level) throws DBusError, IOError;
+        [DBus (name ="MaxAccuracyLevel")]
+		public abstract uint max_accuracy_level {  get; }
+	}
 }

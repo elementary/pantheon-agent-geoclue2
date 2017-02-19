@@ -5,10 +5,11 @@ vala_precompile(VALA_C ${EXEC_NAME}
     Utils.vala
 PACKAGES
     gtk+-3.0
-    posix
+    geoclue2
 OPTIONS
   --target-glib=2.32
   --thread
+  --vapidir=${CMAKE_SOURCE_DIR}/vapi
 )
 
 add_executable (${EXEC_NAME} ${VALA_C})

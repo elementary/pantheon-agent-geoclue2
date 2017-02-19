@@ -16,7 +16,7 @@ add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
 add_definitions (-w)
 
 find_package (PkgConfig)
-pkg_check_modules (DEPS REQUIRED gtk+-3.0)
+pkg_check_modules (DEPS REQUIRED gtk+-3.0 libgeoclue-2.0)
 
 add_definitions (${DEPS_CFLAGS})
 link_directories (${DEPS_LIBRARY_DIRS})
