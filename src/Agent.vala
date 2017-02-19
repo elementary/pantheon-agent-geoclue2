@@ -21,17 +21,21 @@
 
 namespace Ag {
     public class Agent {
+        private const string app_id = "org.pantheon.agent-geoclue2";
+
         public Agent () {
             register_with_session.begin ((obj, res)=> {
                 bool success = register_with_session.end (res);
                 if (!success) {
                     warning ("Failed to register with Session manager");
                 }
+                
+                register_with_geoclue.begin ();
             });
         }
 
         private async bool register_with_session () {
-            var sclient = yield Utils.register_with_session ("org.pantheon.agent-geoclue2");
+            var sclient = yield Utils.register_with_session (app_id);
             if (sclient == null) {
                 return false;
             }
@@ -41,6 +45,10 @@ namespace Ag {
             sclient.stop.connect (session_stop);
 
             return true;
+        }
+
+        private async void register_with_geoclue () {
+            yield Utils.register_with_geoclue (app_id);
         }
 
         private void session_respond (SessionClient sclient, uint flags) {

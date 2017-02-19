@@ -33,5 +33,10 @@ namespace Ag {
         public signal void query_end_session (uint flags);
         public signal void end_session (uint flags);
         public signal void cancel_end_session ();
-    }    
+    }
+
+    [DBus (name = "org.freedesktop.GeoClue2.Manager")]
+    public interface GeoClue2Manager : Object {
+        public abstract async void add_agent (string id) throws IOError;
+    }
 }

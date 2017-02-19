@@ -23,6 +23,9 @@ namespace Ag.Utils {
     public const string GNOME_SESSION_MANAGER_IFACE = "org.gnome.SessionManager";
     public const string GNOME_SESSION_MANAGER_PATH = "/org/gnome/SessionManager";
 
+    public const string GEOCLUE2_MANAGER_IFACE = "org.freedesktop.GeoClue2";
+    public const string GEOCLUE2_MANAGER_PATH = "/org/freedesktop/GeoClue2/Manager";
+
     public async SessionClient? register_with_session (string app_id) {
         SessionClient? sclient = null;
         ObjectPath? path = null;
@@ -50,5 +53,14 @@ namespace Ag.Utils {
         }
 
         return sclient;
+    }
+
+    public async void register_with_geoclue (string app_id) {
+        try {
+            GeoClue2Manager manager = yield Bus.get_proxy (BusType.SYSTEM, GEOCLUE2_MANAGER_IFACE, GEOCLUE2_MANAGER_PATH);
+            yield manager.add_agent (app_id);
+        } catch (Error e) {
+            warning ("Unable to register with GeoClue2: %s", e.message);
+        }
     }
 }
