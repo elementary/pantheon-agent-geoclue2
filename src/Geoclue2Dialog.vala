@@ -21,7 +21,7 @@
 
 namespace Ag.Widgets {
     public class Geoclue2Dialog : Gtk.Dialog {
-        public signal void done ();
+        public signal void done (bool allow);
 
         public Geoclue2Dialog (string message, string icon_name) {
             Object (title: _("Location Dialog"), window_position: Gtk.WindowPosition.CENTER, resizable: false, deletable: false, skip_taskbar_hint: true);
@@ -59,10 +59,10 @@ namespace Ag.Widgets {
             grid.attach (heading, 1, 0, 1, 1);
             grid.attach (message_label, 1, 1, 1, 1);
 
-            var cancel_button = (Gtk.Button)add_button (_("Deny"), Gtk.ResponseType.CANCEL);
-            var authenticate_button = (Gtk.Button)add_button (_("Allow"), Gtk.ResponseType.APPLY);
+            var deny_button = (Gtk.Button)add_button (_("Deny"), Gtk.ResponseType.NO);
+            var allow_button = (Gtk.Button)add_button (_("Allow"), Gtk.ResponseType.YES);
 
-            set_default (cancel_button);
+            set_default (deny_button);
 
             get_content_area ().add (grid);
 
@@ -72,8 +72,8 @@ namespace Ag.Widgets {
             action_area.margin_top = 14;
         }
 
-        public override void show () {
-            base.show ();
+        public override void show_all () {
+            base.show_all ();
 
             var window = get_window ();
             if (window == null) {

@@ -20,7 +20,7 @@
  */
 
 namespace Ag {
-    public class Agent : Application, GeoClue2Agent {
+    public class Agent : Gtk.Application, GeoClue2Agent {
         private const string app_id = "org.pantheon.agent-geoclue2";
 
         public uint max_accuracy_level { get { return GeoClue2.AccuracyLevel.EXACT; } }
@@ -73,7 +73,15 @@ namespace Ag {
         
         public void authorize_app (string id, uint req_accuracy, out bool authorized, out uint allowed_accuracy) {
 			debug ("Request for '%s' at level '%u'", id, req_accuracy);
-            authorized = true;
+
+			var dialog = new Widgets.Geoclue2Dialog ("%s wants to use your location".printf (id), "");
+			dialog.show_all ();
+			var response = dialog.run ();
+			if (response == Gtk.ResponseType.YES) {
+				authorized = true;
+			} else {
+				authorized = false;
+			}
             allowed_accuracy = req_accuracy;
         }
 
