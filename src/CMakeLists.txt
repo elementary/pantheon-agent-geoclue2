@@ -5,6 +5,7 @@ vala_precompile(VALA_C ${EXEC_NAME}
     Utils.vala
 PACKAGES
     gtk+-3.0
+    gio-unix-2.0
     geoclue2
     dbus-glib-1
 OPTIONS

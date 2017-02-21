@@ -51,15 +51,7 @@ namespace Ag {
 			    bus_registered = true;
 			    register_with_geoclue.begin ();
 
-				debug ("Registering client...");
-				get_geoclue_client.begin ((obj, res) => {
-					client = get_geoclue_client.end (res);
-					try {
-						client.start ();
-					} catch (Error e) {
-						warning ("Error while registering geoclue client: %s", e.message);
-					}
-				}); 
+				
 		    } catch (Error e) {
 			    error ("Error while registering the agent: %s \n", e.message);
 		    }
@@ -80,16 +72,32 @@ namespace Ag {
 		    if (bus_registered) {
 			    connection.unregister_object (object_id);
 			}
-			if (client != null) {
-				client.stop ();
-			}
 		    base.dbus_unregister (connection, object_path);
 	    }
         
         public void authorize_app (string id, uint req_accuracy, out bool authorized, out uint allowed_accuracy) {
 			debug ("Request for '%s' at level '%u'", id, req_accuracy);
 
-			string accuracy_string = accuracy_to_string (id, req_accuracy);
+			DesktopAppInfo app_info = new DesktopAppInfo (id + ".desktop");
+			if (app_info == null) {
+				debug ("Rejecting for invalid desktop file");
+				authorized = false;
+				allowed_accuracy = req_accuracy;
+				return;
+			}
+
+			string app_name = app_info.get_display_name ();
+			string accuracy_string = accuracy_to_string (app_name, req_accuracy);
+
+			debug ("Registering client...");
+			get_geoclue_client.begin ((obj, res) => {
+				client = get_geoclue_client.end (res);
+				try {
+					client.start ();
+				} catch (Error e) {
+					warning ("Error while registering geoclue client: %s", e.message);
+				}
+			}); 
 
 			var dialog = new Widgets.Geoclue2Dialog (accuracy_string, "");
 			dialog.show_all ();
@@ -102,6 +110,16 @@ namespace Ag {
 				default:
 					authorized = false;
 					break;
+			}
+
+			dialog.destroy ();
+
+			if (client != null) {
+				try {
+					client.stop ();
+				} catch (Error e) {
+					warning ("Error while stopping geoclue client: %s", e.message);
+				}
 			}
 
             allowed_accuracy = req_accuracy;
