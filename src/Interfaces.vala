@@ -23,6 +23,7 @@ namespace Ag {
     [DBus (name = "org.freedesktop.GeoClue2.Manager")]
     public interface GeoClue2Manager : Object {
         public abstract async void add_agent (string id) throws IOError;
+        public abstract async ObjectPath get_client () throws IOError;
     }
 
     [DBus (name = "org.freedesktop.GeoClue2.Agent")]
@@ -32,4 +33,14 @@ namespace Ag {
         [DBus (name ="MaxAccuracyLevel")]
 		public abstract uint max_accuracy_level {  get; }
 	}
+
+    [DBus (name = "org.freedesktop.GeoClue2.Client")]
+    public interface GeoClue2Client : GLib.Object {
+        [DBus (name = "Start")]
+        public abstract void start () throws IOError;
+        [DBus (name = "Stop")]
+        public abstract void stop () throws IOError;
+        [DBus (name = "DesktopId")]
+        public abstract string desktop_id { owned get; set; }
+    }
 }

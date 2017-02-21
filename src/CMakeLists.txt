@@ -6,6 +6,7 @@ vala_precompile(VALA_C ${EXEC_NAME}
 PACKAGES
     gtk+-3.0
     geoclue2
+    dbus-glib-1
 OPTIONS
   --target-glib=2.32
   --thread

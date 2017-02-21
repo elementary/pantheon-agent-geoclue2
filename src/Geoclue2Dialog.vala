@@ -39,7 +39,7 @@ namespace Ag.Widgets {
             message_label.valign = Gtk.Align.START;
             message_label.xalign = 0;
 
-            var image = new Gtk.Image.from_icon_name ("user-question", Gtk.IconSize.DIALOG);
+            var image = new Gtk.Image.from_icon_name ("dialog-question", Gtk.IconSize.DIALOG);
 
             var overlay = new Gtk.Overlay ();
             overlay.valign = Gtk.Align.START;

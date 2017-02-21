@@ -25,10 +25,36 @@ namespace Ag.Utils {
 
     public async void register_with_geoclue (string app_id) {
         try {
-            GeoClue2Manager manager = yield Bus.get_proxy (BusType.SYSTEM, GEOCLUE2_MANAGER_IFACE, GEOCLUE2_MANAGER_PATH);
+            GeoClue2Manager? manager = yield Bus.get_proxy (BusType.SYSTEM, GEOCLUE2_MANAGER_IFACE, GEOCLUE2_MANAGER_PATH);
             yield manager.add_agent (app_id);
         } catch (Error e) {
             warning ("Unable to register with GeoClue2: %s", e.message);
         }
+    }
+
+    public async GeoClue2Client? get_geoclue2_client (string app_id) {
+        GeoClue2Client? client = null;
+        ObjectPath? path = null;
+
+        try {
+            GeoClue2Manager? manager = yield Bus.get_proxy (BusType.SYSTEM, GEOCLUE2_MANAGER_IFACE, GEOCLUE2_MANAGER_PATH);
+            path = yield manager.get_client ();
+        } catch (Error e) {
+            warning ("Unable to register with GeoClue2: %s", e.message);
+            return null;
+        }
+
+        try {
+            client = yield Bus.get_proxy (BusType.SYSTEM, GEOCLUE2_MANAGER_IFACE, path);
+        } catch (Error e) {
+            warning ("Unable to get Private Client proxy: %s", e.message);
+            return null;
+        }
+
+        if (client != null) {
+            client.desktop_id = app_id;
+        }
+
+        return client;
     }
 }

@@ -28,9 +28,11 @@ namespace Ag {
 		private uint object_id;
 		private bool bus_registered = false;
 
+		private GeoClue2Client? client = null;
+
         public Agent () {
             Object (application_id: app_id);
-            loop = new MainLoop ();                  
+            loop = new MainLoop ();       
         }
 
         public override void activate () {
@@ -47,7 +49,17 @@ namespace Ag {
 				debug ("Adding agent...");
 			    object_id = conn.register_object ("/org/freedesktop/GeoClue2/Agent", (GeoClue2Agent)this);
 			    bus_registered = true;
-			    register_with_geoclue ();
+			    register_with_geoclue.begin ();
+
+				debug ("Registering client...");
+				get_geoclue_client.begin ((obj, res) => {
+					client = get_geoclue_client.end (res);
+					try {
+						client.start ();
+					} catch (Error e) {
+						warning ("Error while registering geoclue client: %s", e.message);
+					}
+				}); 
 		    } catch (Error e) {
 			    error ("Error while registering the agent: %s \n", e.message);
 		    }
@@ -68,26 +80,66 @@ namespace Ag {
 		    if (bus_registered) {
 			    connection.unregister_object (object_id);
 			}
+			if (client != null) {
+				client.stop ();
+			}
 		    base.dbus_unregister (connection, object_path);
 	    }
         
         public void authorize_app (string id, uint req_accuracy, out bool authorized, out uint allowed_accuracy) {
 			debug ("Request for '%s' at level '%u'", id, req_accuracy);
 
-			var dialog = new Widgets.Geoclue2Dialog ("%s wants to use your location".printf (id), "");
+			string accuracy_string = accuracy_to_string (id, req_accuracy);
+
+			var dialog = new Widgets.Geoclue2Dialog (accuracy_string, "");
 			dialog.show_all ();
-			var response = dialog.run ();
-			if (response == Gtk.ResponseType.YES) {
-				authorized = true;
-			} else {
-				authorized = false;
+
+			var result = dialog.run ();
+			switch (result) {
+				case Gtk.ResponseType.YES:
+					authorized = true;
+					break;
+				default:
+					authorized = false;
+					break;
 			}
+
             allowed_accuracy = req_accuracy;
         }
+
+		private string accuracy_to_string (string app_name, uint accuracy) {
+			string message = "";
+			switch (accuracy) {
+				case GeoClue2.AccuracyLevel.COUNTRY:
+					message = _("%s wants to obtain your location to a country level");
+					break;
+				case GeoClue2.AccuracyLevel.CITY:
+					message = _("%s wants to obtain your location to a city level");
+					break;
+				case GeoClue2.AccuracyLevel.NEIGHBORHOOD:
+					message = _("%s wants to obtain your location to a neighborhood level");
+					break;
+				case GeoClue2.AccuracyLevel.STREET:
+					message = _("%s wants to obtain your location to a street level");
+					break;
+				case GeoClue2.AccuracyLevel.EXACT:
+					message = _("%s wants to obtain your exact location");
+					break;
+				default:
+					message = _("%s wants to obtain your location");
+					break;
+			}
+			
+			return message.printf (app_name);
+		}
 
         private async void register_with_geoclue () {
             yield Utils.register_with_geoclue (app_id);
         }
+
+		private async GeoClue2Client get_geoclue_client () {
+			return yield Utils.get_geoclue2_client (app_id);
+		}
     }
 
     public static int main (string[] args) {
