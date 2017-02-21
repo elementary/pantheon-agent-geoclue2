@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-19 11:33+0000\n"
+"POT-Creation-Date: 2017-02-21 00:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,4 +31,28 @@ msgstr ""
 
 #: ../src/Geoclue2Dialog.vala:63
 msgid "Allow"
+msgstr ""
+
+#: ../src/Agent.vala:114
+msgid "%s wants to obtain your location to a country level"
+msgstr ""
+
+#: ../src/Agent.vala:117
+msgid "%s wants to obtain your location to a city level"
+msgstr ""
+
+#: ../src/Agent.vala:120
+msgid "%s wants to obtain your location to a neighborhood level"
+msgstr ""
+
+#: ../src/Agent.vala:123
+msgid "%s wants to obtain your location to a street level"
+msgstr ""
+
+#: ../src/Agent.vala:126
+msgid "%s wants to obtain your exact location"
+msgstr ""
+
+#: ../src/Agent.vala:129
+msgid "%s wants to obtain your location"
 msgstr ""
