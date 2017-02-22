@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+
+<schema id="org.pantheon.agent-geoclue2" path="/org/pantheon/agent-geoclue2/">
+    <key name="remembered-apps" type="a{sv}">
+        <default>[]</default>
+        <summary>Remembered GeoClue2 application authorizations</summary>
+        <description>A dictionary of GeoClue2 authorization levels with the key as the desktop ID of the application</description>
+    </key>
+</schema>
+
+</schemalist>

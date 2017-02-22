@@ -39,6 +39,8 @@ namespace Ag.Widgets {
             message_label.valign = Gtk.Align.START;
             message_label.xalign = 0;
 
+            Gtk.CheckButton remember_checkbox = new Gtk.CheckButton.with_label (_("Remember this choice"));
+
             var image = new Gtk.Image.from_icon_name ("dialog-question", Gtk.IconSize.DIALOG);
 
             var overlay = new Gtk.Overlay ();
@@ -55,9 +57,10 @@ namespace Ag.Widgets {
             grid.column_spacing = 12;
             grid.row_spacing = 6;
             grid.margin_left = grid.margin_right = 12;
-            grid.attach (overlay, 0, 0, 1, 2);
+            grid.attach (overlay, 0, 0, 1, 3);
             grid.attach (heading, 1, 0, 1, 1);
             grid.attach (message_label, 1, 1, 1, 1);
+            grid.attach (remember_checkbox, 1, 2, 1, 1);
 
             var deny_button = (Gtk.Button)add_button (_("Deny"), Gtk.ResponseType.NO);
             var allow_button = (Gtk.Button)add_button (_("Allow"), Gtk.ResponseType.YES);
