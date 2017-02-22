@@ -1,1 +1,1 @@
-/etc/geoclue/geoclue.conf.pantheonagent debian/transform_geoclue.conf.pantheonagent
+/etc/geoclue/geoclue.conf.debathena debian/transform_geoclue.conf.debathena
