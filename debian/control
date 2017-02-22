@@ -17,6 +17,6 @@ Package: pantheon-agent-geoclue2
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, geoclue-2.0
 Provides: ${diverted-files}
-Conflicts: ${diverted-files
+Conflicts: ${diverted-files}
 Description: GeoClue2 authorization designed for Pantheon
  An agent for GeoClue2 authorization designed for Pantheon desktop environment.
