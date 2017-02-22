@@ -8,11 +8,14 @@ Build-Depends: cmake (>= 2.8),
                libgtk-3-dev,               
                libgeoclue-2-dev,
                libdbus-glib-1-dev,
-               valac (>= 0.34.1)  
+               valac (>= 0.34.1),
+               config-package-dev (>= 5.0)
 Standards-Version: 3.9.6
 
 Package: pantheon-agent-geoclue2
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, geoclue-2.0
+Provides: ${diverted-files}
+Conflicts: ${diverted-files
 Description: GeoClue2 authorization designed for Pantheon
  An agent for GeoClue2 authorization designed for Pantheon desktop environment.
