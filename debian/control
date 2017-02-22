@@ -9,8 +9,9 @@ Build-Depends: cmake (>= 2.8),
                libgeoclue-2-dev,
                libdbus-glib-1-dev,
                valac (>= 0.34.1),
-               config-package-dev (>= 5.0)
-Standards-Version: 3.9.6
+               config-package-dev (>= 5.0),
+               geoclue-2.0 
+Standards-Version: 3.9.7
 
 Package: pantheon-agent-geoclue2
 Architecture: any
