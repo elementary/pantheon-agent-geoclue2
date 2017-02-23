@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-21 00:11+0000\n"
+"POT-Creation-Date: 2017-02-22 23:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,34 +25,38 @@ msgstr ""
 msgid "Location Request"
 msgstr ""
 
-#: ../src/Geoclue2Dialog.vala:62
+#: ../src/Geoclue2Dialog.vala:42
+msgid "Remember this choice"
+msgstr ""
+
+#: ../src/Geoclue2Dialog.vala:65
 msgid "Deny"
 msgstr ""
 
-#: ../src/Geoclue2Dialog.vala:63
+#: ../src/Geoclue2Dialog.vala:66
 msgid "Allow"
 msgstr ""
 
-#: ../src/Agent.vala:114
+#: ../src/Agent.vala:132
 msgid "%s wants to obtain your location to a country level"
 msgstr ""
 
-#: ../src/Agent.vala:117
+#: ../src/Agent.vala:135
 msgid "%s wants to obtain your location to a city level"
 msgstr ""
 
-#: ../src/Agent.vala:120
+#: ../src/Agent.vala:138
 msgid "%s wants to obtain your location to a neighborhood level"
 msgstr ""
 
-#: ../src/Agent.vala:123
+#: ../src/Agent.vala:141
 msgid "%s wants to obtain your location to a street level"
 msgstr ""
 
-#: ../src/Agent.vala:126
+#: ../src/Agent.vala:144
 msgid "%s wants to obtain your exact location"
 msgstr ""
 
-#: ../src/Agent.vala:129
+#: ../src/Agent.vala:147
 msgid "%s wants to obtain your location"
 msgstr ""

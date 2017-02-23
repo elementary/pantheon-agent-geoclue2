@@ -29,10 +29,13 @@ namespace Ag {
 		private bool bus_registered = false;
 
 		private GeoClue2Client? client = null;
+		private Settings settings = new Settings (app_id);
+		private VariantDict remembered_apps;
 
         public Agent () {
             Object (application_id: app_id);
-            loop = new MainLoop ();       
+            loop = new MainLoop ();      
+			load_remembered_apps (); 
         }
 
         public override void activate () {
@@ -86,6 +89,21 @@ namespace Ag {
 				return;
 			}
 
+			// Reload the config in case something else changed it
+			load_remembered_apps ();
+
+			Variant remembered_accuracy = get_remembered_accuracy (id);
+			if (remembered_accuracy != null) {
+				var stored_accuracy = remembered_accuracy.get_uint32();
+				if (req_accuracy <= stored_accuracy) {
+					authorized = true;
+				} else {
+					authorized = false;
+				}
+				allowed_accuracy = req_accuracy;
+				return;
+			}
+
 			string app_name = app_info.get_display_name ();
 			string accuracy_string = accuracy_to_string (app_name, req_accuracy);
 
@@ -103,6 +121,8 @@ namespace Ag {
 			dialog.show_all ();
 
 			var result = dialog.run ();
+			var remember = dialog.remember_checked ();
+
 			switch (result) {
 				case Gtk.ResponseType.YES:
 					authorized = true;
@@ -110,6 +130,10 @@ namespace Ag {
 				default:
 					authorized = false;
 					break;
+			}
+
+			if (remember) {
+					remember_app (id, new Variant.uint32 (req_accuracy));
 			}
 
 			dialog.destroy ();
@@ -157,6 +181,19 @@ namespace Ag {
 
 		private async GeoClue2Client get_geoclue_client () {
 			return yield Utils.get_geoclue2_client (app_id);
+		}
+
+		private void load_remembered_apps () {
+			remembered_apps = new VariantDict(settings.get_value("remembered-apps"));
+		}
+
+		public void remember_app (string desktop_id, Variant accuracy_level) {
+			remembered_apps.insert_value (desktop_id, accuracy_level);
+			settings.set_value ("remembered-apps", remembered_apps.end ());
+		}
+
+		public Variant get_remembered_accuracy (string desktop_id) {
+			return remembered_apps.lookup_value (desktop_id, GLib.VariantType.UINT32);
 		}
     }
 
