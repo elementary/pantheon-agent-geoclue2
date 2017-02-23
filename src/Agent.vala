@@ -133,7 +133,11 @@ namespace Ag {
 			}
 
 			if (remember) {
+				if(authorized) {
 					remember_app (id, new Variant.uint32 (req_accuracy));
+				} else {
+					remember_app (id, new Variant.uint32 (0));
+				}
 			}
 
 			dialog.destroy ();
