@@ -117,7 +117,7 @@ namespace Ag {
 				}
 			}); 
 
-			var dialog = new Widgets.Geoclue2Dialog (accuracy_string, "");
+			var dialog = new Widgets.Geoclue2Dialog (accuracy_string, app_info.get_icon ().to_string ());
 			dialog.show_all ();
 
 			var result = dialog.run ();
