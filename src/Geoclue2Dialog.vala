@@ -64,7 +64,8 @@ namespace Ag.Widgets {
             grid.attach (remember_checkbox, 1, 2, 1, 1);
 
             var deny_button = (Gtk.Button)add_button (_("Deny"), Gtk.ResponseType.NO);
-            add_button (_("Allow"), Gtk.ResponseType.YES);
+            var allow_button = (Gtk.Button)add_button (_("Allow"), Gtk.ResponseType.YES);
+            allow_button.get_style_context ().add_class ("suggested-action");
 
             set_default (deny_button);
 
