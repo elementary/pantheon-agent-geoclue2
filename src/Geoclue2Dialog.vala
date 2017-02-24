@@ -24,25 +24,27 @@ namespace Ag.Widgets {
         public signal void done (bool allow);
         private Gtk.CheckButton remember_checkbox;
 
-        public Geoclue2Dialog (string message, string icon_name) {
+        public Geoclue2Dialog (string message, string app_name, string icon_name) {
             Object (title: _("Location Dialog"), window_position: Gtk.WindowPosition.CENTER, resizable: false, deletable: false, skip_taskbar_hint: true);
 
             set_keep_above (true);
 
-            var heading = new Gtk.Label (_("Location Request"));
+            var heading = new Gtk.Label (_("Allow %s to Access This Device's Location?".printf (app_name)));
             heading.get_style_context ().add_class ("primary");
-            heading.valign = Gtk.Align.END;
+            heading.max_width_chars = 50;
+            heading.wrap = true;
             heading.xalign = 0;
 
             var message_label = new Gtk.Label (message);
-            message_label.max_width_chars = 60;
+            message_label.max_width_chars = 50;
+            message_label.use_markup = true;
             message_label.wrap = true;
-            message_label.valign = Gtk.Align.START;
             message_label.xalign = 0;
 
-            remember_checkbox = new Gtk.CheckButton.with_label (_("Remember this choice"));
+            remember_checkbox = new Gtk.CheckButton.with_label (_("Never ask again"));
+            remember_checkbox.margin_top = 12;
 
-            var image = new Gtk.Image.from_icon_name ("dialog-question", Gtk.IconSize.DIALOG);
+            var image = new Gtk.Image.from_icon_name ("find-location", Gtk.IconSize.DIALOG);
 
             var overlay = new Gtk.Overlay ();
             overlay.valign = Gtk.Align.START;
