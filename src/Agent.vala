@@ -121,7 +121,6 @@ namespace Ag {
 			dialog.show_all ();
 
 			var result = dialog.run ();
-			var remember = dialog.remember_checked ();
 
 			switch (result) {
 				case Gtk.ResponseType.YES:
@@ -132,12 +131,8 @@ namespace Ag {
 					break;
 			}
 
-			if (remember) {
-				if(authorized) {
-					remember_app (id, new Variant.uint32 (req_accuracy));
-				} else {
-					remember_app (id, new Variant.uint32 (0));
-				}
+			if(authorized) {
+				remember_app (id, new Variant.uint32 (req_accuracy));
 			}
 
 			dialog.destroy ();
