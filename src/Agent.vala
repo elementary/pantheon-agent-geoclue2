@@ -117,7 +117,7 @@ namespace Ag {
 				}
 			}); 
 
-			var dialog = new Widgets.Geoclue2Dialog (accuracy_string, app_info.get_icon ().to_string ());
+			var dialog = new Widgets.Geoclue2Dialog (accuracy_string, app_name, app_info.get_icon ().to_string ());
 			dialog.show_all ();
 
 			var result = dialog.run ();
@@ -157,26 +157,26 @@ namespace Ag {
 			string message = "";
 			switch (accuracy) {
 				case GeoClue2.AccuracyLevel.COUNTRY:
-					message = _("%s wants to obtain your location to a country level");
+					message = _("the current country");
 					break;
 				case GeoClue2.AccuracyLevel.CITY:
-					message = _("%s wants to obtain your location to a city level");
+					message = _("the nearest city or town");
 					break;
 				case GeoClue2.AccuracyLevel.NEIGHBORHOOD:
-					message = _("%s wants to obtain your location to a neighborhood level");
+					message = _("the nearest neighborhood");
 					break;
 				case GeoClue2.AccuracyLevel.STREET:
-					message = _("%s wants to obtain your location to a street level");
+					message = _("the nearest street");
 					break;
 				case GeoClue2.AccuracyLevel.EXACT:
-					message = _("%s wants to obtain your exact location");
+					message = _("your exact location");
 					break;
 				default:
-					message = _("%s wants to obtain your location");
+					message = _("your location");
 					break;
 			}
 			
-			return message.printf (app_name);
+			return _("%s will be able to detect %s. Permissions can be changed in <a href='settings://security/privacy/location'>Location Settings…</a>").printf (app_name, message);
 		}
 
         private async void register_with_geoclue () {
