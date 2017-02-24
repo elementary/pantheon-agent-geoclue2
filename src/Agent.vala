@@ -97,11 +97,9 @@ namespace Ag {
 				var stored_accuracy = remembered_accuracy.get_uint32();
 				if (req_accuracy <= stored_accuracy) {
 					authorized = true;
-				} else {
-					authorized = false;
-				}
-				allowed_accuracy = req_accuracy;
-				return;
+					allowed_accuracy = req_accuracy;
+					return;
+				}				
 			}
 
 			string app_name = app_info.get_display_name ();
@@ -133,6 +131,8 @@ namespace Ag {
 
 			if(authorized) {
 				remember_app (id, new Variant.uint32 (req_accuracy));
+			} else {
+				remember_app (id, new Variant.uint32 (0));
 			}
 
 			dialog.destroy ();
