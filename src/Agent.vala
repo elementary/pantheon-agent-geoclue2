@@ -92,7 +92,7 @@ namespace Ag {
 			// Reload the config in case something else changed it
 			load_remembered_apps ();
 
-			Variant remembered_accuracy = get_remembered_accuracy (id);
+			Variant? remembered_accuracy = get_remembered_accuracy (id);
 			if (remembered_accuracy != null) {
 				var stored_accuracy = remembered_accuracy.get_child_value (1).get_uint32();
 				var stored_auth = remembered_accuracy.get_child_value (0).get_boolean ();
@@ -191,7 +191,7 @@ namespace Ag {
 			settings.set_value ("remembered-apps", remembered_apps.end ());
 		}
 
-		public Variant get_remembered_accuracy (string desktop_id) {
+		public Variant? get_remembered_accuracy (string desktop_id) {
 			return remembered_apps.lookup_value (desktop_id, GLib.VariantType.TUPLE);
 		}
     }
