@@ -56,11 +56,7 @@ namespace Ag {
 			    register_with_geoclue.begin ();
 		    } catch (Error e) {
 			    error ("Error while registering the agent: %s \n", e.message);
-		    }
-		    
-			get_geoclue_client.begin ((obj, res) => {
-				client = get_geoclue_client.end (res);
-			});		    	
+		    }	    	
 	    }
 
 	    private void watch (DBusConnection connection) {
@@ -82,7 +78,7 @@ namespace Ag {
 		    base.dbus_unregister (connection, object_path);
 	    }
         
-        public void authorize_app (string id, uint req_accuracy, out bool authorized, out uint allowed_accuracy) {
+        public async void authorize_app (string id, uint req_accuracy, out bool authorized, out uint allowed_accuracy) {
 			debug ("Request for '%s' at level '%u'", id, req_accuracy);
 
 			DesktopAppInfo app_info = new DesktopAppInfo (id + ".desktop");
@@ -96,7 +92,7 @@ namespace Ag {
 			// Reload the config in case something else changed it
 			load_remembered_apps ();
 
-			Variant remembered_accuracy = get_remembered_accuracy (id);
+			Variant? remembered_accuracy = get_remembered_accuracy (id);
 			if (remembered_accuracy != null) {
 				var stored_accuracy = remembered_accuracy.get_uint32();
 				if (req_accuracy <= stored_accuracy) {
@@ -109,6 +105,7 @@ namespace Ag {
 			string app_name = app_info.get_display_name ();
 			string accuracy_string = accuracy_to_string (app_name, req_accuracy);
 
+			client = yield get_geoclue_client ();
 			debug ("Starting client...");
 			if (client != null) {
 				try {
@@ -195,7 +192,7 @@ namespace Ag {
 			settings.set_value ("remembered-apps", remembered_apps.end ());
 		}
 
-		public Variant get_remembered_accuracy (string desktop_id) {
+		public Variant? get_remembered_accuracy (string desktop_id) {
 			return remembered_apps.lookup_value (desktop_id, GLib.VariantType.UINT32);
 		}
     }
