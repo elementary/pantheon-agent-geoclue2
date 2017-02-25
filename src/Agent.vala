@@ -129,7 +129,7 @@ namespace Ag {
 					break;
 			}
 
-			if(authorized) {
+			if (authorized) {
 				remember_app (id, new Variant.uint32 (req_accuracy));
 			} else {
 				remember_app (id, new Variant.uint32 (0));
