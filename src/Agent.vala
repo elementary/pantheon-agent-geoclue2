@@ -117,10 +117,9 @@ namespace Ag {
 				var stored_accuracy = remembered_accuracy.get_uint32();
 				if (req_accuracy <= stored_accuracy) {
 					authorized = true;
+					allowed_accuracy = req_accuracy;
+					return;
 				}
-
-				allowed_accuracy = req_accuracy;
-				return;
 			}
 
 			string app_name = app_info.get_display_name ();
