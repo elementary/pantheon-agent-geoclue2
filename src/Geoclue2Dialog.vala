@@ -21,8 +21,6 @@
 
 namespace Ag.Widgets {
     public class Geoclue2Dialog : Gtk.Dialog {
-        public signal void done (bool allow);
-        private Gtk.CheckButton remember_checkbox;
 
         public Geoclue2Dialog (string message, string app_name, string icon_name) {
             Object (title: _("Location Dialog"), window_position: Gtk.WindowPosition.CENTER, resizable: false, deletable: false, skip_taskbar_hint: true);
@@ -40,9 +38,6 @@ namespace Ag.Widgets {
             message_label.use_markup = true;
             message_label.wrap = true;
             message_label.xalign = 0;
-
-            remember_checkbox = new Gtk.CheckButton.with_label (_("Never ask again"));
-            remember_checkbox.margin_top = 12;
 
             var image = new Gtk.Image.from_icon_name ("find-location", Gtk.IconSize.DIALOG);
 
@@ -63,7 +58,6 @@ namespace Ag.Widgets {
             grid.attach (overlay, 0, 0, 1, 3);
             grid.attach (heading, 1, 0, 1, 1);
             grid.attach (message_label, 1, 1, 1, 1);
-            grid.attach (remember_checkbox, 1, 2, 1, 1);
 
             var deny_button = (Gtk.Button)add_button (_("Deny"), Gtk.ResponseType.NO);
             var allow_button = (Gtk.Button)add_button (_("Allow"), Gtk.ResponseType.YES);
@@ -88,10 +82,6 @@ namespace Ag.Widgets {
             }
 
             window.focus (Gdk.CURRENT_TIME);
-        }
-
-        public bool remember_checked () {
-            return remember_checkbox.get_active ();
         }
     }
 }
