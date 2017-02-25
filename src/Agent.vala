@@ -58,16 +58,8 @@ namespace Ag {
 			    error ("Error while registering the agent: %s \n", e.message);
 		    }
 		    
-			debug ("Registering client...");
 			get_geoclue_client.begin ((obj, res) => {
 				client = get_geoclue_client.end (res);
-				if (client != null) {
-					try {
-						client.start ();
-				    } catch (Error e) {
-				    	error ("Could not start client: %s", e.message);
-				    }
-				}
 			});		    	
 	    }
 
@@ -86,14 +78,6 @@ namespace Ag {
 		    if (bus_registered) {
 			    connection.unregister_object (object_id);
 			}
-
-		    if (client != null) {
-				try {
-					client.stop ();
-			    } catch (Error e) {
-			    	error ("Could not stop client: %s", e.message);
-			    }
-		    }
 
 		    base.dbus_unregister (connection, object_path);
 	    }
@@ -125,6 +109,15 @@ namespace Ag {
 			string app_name = app_info.get_display_name ();
 			string accuracy_string = accuracy_to_string (app_name, req_accuracy);
 
+			debug ("Starting client...");
+			if (client != null) {
+				try {
+					client.start ();
+			    } catch (Error e) {
+			    	error ("Could not start client: %s", e.message);
+			    }
+			}
+
 			var dialog = new Widgets.Geoclue2Dialog (accuracy_string, app_name, app_info.get_icon ().to_string ());
 			dialog.show_all ();
 
@@ -148,6 +141,15 @@ namespace Ag {
 			dialog.destroy ();
 
             allowed_accuracy = req_accuracy;
+
+            debug ("Stopping client...");
+		    if (client != null) {
+				try {
+					client.stop ();
+			    } catch (Error e) {
+			    	error ("Could not stop client: %s", e.message);
+			    }
+		    }            
         }
 
 		private string accuracy_to_string (string app_name, uint accuracy) {
