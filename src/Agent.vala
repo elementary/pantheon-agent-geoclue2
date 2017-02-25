@@ -21,11 +21,12 @@
 
 namespace Ag {
     public class Agent : Gtk.Application, GeoClue2Agent {
-        public uint max_accuracy_level { get { return GeoClue2.AccuracyLevel.EXACT; } }
+		private uint _max_accuracy_level = GeoClue2.AccuracyLevel.EXACT;
+        public uint max_accuracy_level { get { return _max_accuracy_level; } }
 
         private MainLoop loop;
 		private uint object_id;
-		private bool bus_registered = false;
+		private bool bus_registered = false;		
 
 		private GeoClue2Client? client = null;
 		private Settings settings;
@@ -35,15 +36,22 @@ namespace Ag {
             application_id = "org.pantheon.agent-geoclue2";
             settings = new Settings (application_id);
 
+			settings.changed.connect ((key) => {
+				refresh_enabled_state ();
+				refresh_remembered_apps ();
+			});
+
             loop = new MainLoop ();      
-			load_remembered_apps (); 
+			
+            refresh_enabled_state ();    
+			refresh_remembered_apps ();
         }
 
         public override void activate () {
             loop.run ();
         }
                
-	    void on_name (DBusConnection conn) {
+	    private void on_name (DBusConnection conn) {
 		    try {
 			    if (bus_registered) {
 				    conn.unregister_object (object_id);
@@ -89,13 +97,11 @@ namespace Ag {
 				return;
 			}
 
-			// Reload the config in case something else changed it
-			load_remembered_apps ();
-
 			Variant? remembered_accuracy = get_remembered_accuracy (id);
 			if (remembered_accuracy != null) {
-				var stored_accuracy = remembered_accuracy.get_uint32();
-				if (req_accuracy <= stored_accuracy) {
+				var stored_auth = remembered_accuracy.get_child_value (0).get_boolean ();
+				var stored_accuracy = remembered_accuracy.get_child_value (1).get_uint32 ();				
+				if (req_accuracy <= stored_accuracy && stored_auth) {
 					authorized = true;
 					allowed_accuracy = req_accuracy;
 					return;
@@ -120,24 +126,15 @@ namespace Ag {
 
 			var result = dialog.run ();
 
-			switch (result) {
-				case Gtk.ResponseType.YES:
-					authorized = true;
-					break;
-				default:
-					authorized = false;
-					break;
+			if (result == Gtk.ResponseType.YES) {
+				authorized = true;
+            } else {
+				authorized = false;
 			}
-
-			if (authorized) {
-				remember_app (id, new Variant.uint32 (req_accuracy));
-			} else {
-				remember_app (id, new Variant.uint32 (0));
-			}
-
+			
 			dialog.destroy ();
-
             allowed_accuracy = req_accuracy;
+            remember_app (id, authorized, req_accuracy);
 
             debug ("Stopping client...");
 		    if (client != null) {
@@ -183,17 +180,29 @@ namespace Ag {
 			return yield Utils.get_geoclue2_client (application_id);
 		}
 
-		private void load_remembered_apps () {
+		private void refresh_remembered_apps () {
 			remembered_apps = new VariantDict(settings.get_value("remembered-apps"));
 		}
 
-		public void remember_app (string desktop_id, Variant accuracy_level) {
-			remembered_apps.insert_value (desktop_id, accuracy_level);
+		private void refresh_enabled_state () {
+			bool enabled = settings.get_value ("location-enabled").get_boolean ();
+			if (enabled) {
+				_max_accuracy_level = GeoClue2.AccuracyLevel.EXACT;
+			} else {
+				_max_accuracy_level = GeoClue2.AccuracyLevel.NONE;
+			}
+		}
+
+		public void remember_app (string desktop_id, bool authorized, uint32 accuracy_level) {
+			Variant[2] tuple_vals = new Variant[2];
+			tuple_vals[0] = new Variant.boolean (authorized);
+			tuple_vals[1] = new Variant.uint32 (accuracy_level);
+			remembered_apps.insert_value (desktop_id, new Variant.tuple (tuple_vals));
 			settings.set_value ("remembered-apps", remembered_apps.end ());
 		}
 
 		public Variant? get_remembered_accuracy (string desktop_id) {
-			return remembered_apps.lookup_value (desktop_id, GLib.VariantType.UINT32);
+			return remembered_apps.lookup_value (desktop_id, GLib.VariantType.TUPLE);
 		}
     }
 
