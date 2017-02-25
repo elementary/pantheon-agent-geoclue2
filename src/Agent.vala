@@ -23,10 +23,11 @@ namespace Ag {
     public class Agent : Gtk.Application, GeoClue2Agent {
         private const string app_id = "org.pantheon.agent-geoclue2";
 
-        public uint max_accuracy_level { get { return GeoClue2.AccuracyLevel.EXACT; } }
+		private uint _max_accuracy_level = GeoClue2.AccuracyLevel.EXACT;
+        public uint max_accuracy_level { get { return _max_accuracy_level; } }
         private MainLoop loop;
 		private uint object_id;
-		private bool bus_registered = false;
+		private bool bus_registered = false;		
 
 		private GeoClue2Client? client = null;
 		private Settings settings = new Settings (app_id);
@@ -34,8 +35,14 @@ namespace Ag {
 
         public Agent () {
             Object (application_id: app_id);
-            loop = new MainLoop ();      
-			load_remembered_apps (); 
+            loop = new MainLoop ();  
+			refresh_enabled_state ();    
+			refresh_remembered_apps ();
+
+			settings.changed.connect ((key) => {
+				refresh_enabled_state ();
+				refresh_remembered_apps ();
+			});
         }
 
         public override void activate () {
@@ -88,9 +95,6 @@ namespace Ag {
 				allowed_accuracy = req_accuracy;
 				return;
 			}
-
-			// Reload the config in case something else changed it
-			load_remembered_apps ();
 
 			Variant? remembered_accuracy = get_remembered_accuracy (id);
 			if (remembered_accuracy != null) {
@@ -179,8 +183,17 @@ namespace Ag {
 			return yield Utils.get_geoclue2_client (app_id);
 		}
 
-		private void load_remembered_apps () {
+		private void refresh_remembered_apps () {
 			remembered_apps = new VariantDict(settings.get_value("remembered-apps"));
+		}
+
+		private void refresh_enabled_state () {
+			bool enabled = settings.get_value ("location-enabled").get_boolean ();
+			if (enabled) {
+				_max_accuracy_level = GeoClue2.AccuracyLevel.EXACT;
+			} else {
+				_max_accuracy_level = GeoClue2.AccuracyLevel.NONE;
+			}
 		}
 
 		public void remember_app (string desktop_id, bool authorized, uint32 accuracy_level) {

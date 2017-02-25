@@ -7,6 +7,11 @@
         <summary>Remembered GeoClue2 application authorizations</summary>
         <description>A dictionary of GeoClue2 authorization levels with the key as the desktop ID of the application</description>
     </key>
+    <key name="location-enabled" type="b">
+        <default>true</default>
+        <summary>Whether location sharing is enabled</summary>
+        <description>If location sharing is enabled, apps will be able to make requests to use this device's location</description>
+    </key>
 </schema>
 
 </schemalist>
