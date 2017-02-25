@@ -27,12 +27,12 @@ namespace Ag {
     }
 
     [DBus (name = "org.freedesktop.GeoClue2.Agent")]
-	public interface GeoClue2Agent : GLib.Object {
+    public interface GeoClue2Agent : GLib.Object {
         [DBus (name = "AuthorizeApp")]
-		public abstract async void authorize_app(string desktop_id, uint req_accuracy_level, out bool authorized, out uint allowed_accuracy_level) throws DBusError, IOError;
+        public abstract async void authorize_app (string desktop_id, uint req_accuracy_level, out bool authorized, out uint allowed_accuracy_level) throws DBusError, IOError;
         [DBus (name ="MaxAccuracyLevel")]
-		public abstract uint max_accuracy_level {  get; }
-	}
+        public abstract uint max_accuracy_level {  get; }
+    }
 
     [DBus (name = "org.freedesktop.GeoClue2.Client")]
     public interface GeoClue2Client : GLib.Object {
