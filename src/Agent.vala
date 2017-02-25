@@ -21,19 +21,20 @@
 
 namespace Ag {
     public class Agent : Gtk.Application, GeoClue2Agent {
-        private const string app_id = "org.pantheon.agent-geoclue2";
-
         public uint max_accuracy_level { get { return GeoClue2.AccuracyLevel.EXACT; } }
+
         private MainLoop loop;
 		private uint object_id;
 		private bool bus_registered = false;
 
 		private GeoClue2Client? client = null;
-		private Settings settings = new Settings (app_id);
+		private Settings settings;
 		private VariantDict remembered_apps;
 
-        public Agent () {
-            Object (application_id: app_id);
+        construct {
+            application_id = "org.pantheon.agent-geoclue2";
+            settings = new Settings (application_id);
+
             loop = new MainLoop ();      
 			load_remembered_apps (); 
         }
@@ -53,11 +54,22 @@ namespace Ag {
 			    object_id = conn.register_object ("/org/freedesktop/GeoClue2/Agent", (GeoClue2Agent)this);
 			    bus_registered = true;
 			    register_with_geoclue.begin ();
-
-				
 		    } catch (Error e) {
 			    error ("Error while registering the agent: %s \n", e.message);
+			    return;
 		    }
+		    
+			debug ("Registering client...");
+			get_geoclue_client.begin ((obj, res) => {
+				client = get_geoclue_client.end (res);
+				if (client != null) {
+					try {
+						client.start ();
+				    } catch (Error e) {
+				    	error ("Could not start client: %s", e.message);
+				    }
+				}
+			});		    	
 	    }
 
 	    private void watch (DBusConnection connection) {
@@ -75,10 +87,19 @@ namespace Ag {
 		    if (bus_registered) {
 			    connection.unregister_object (object_id);
 			}
+
+		    if (client != null) {
+				try {
+					client.stop ();
+			    } catch (Error e) {
+			    	error ("Could not stop client: %s", e.message);
+			    }
+		    }
+
 		    base.dbus_unregister (connection, object_path);
 	    }
         
-        public void authorize_app (string id, uint req_accuracy, out bool authorized, out uint allowed_accuracy) {
+        public async void authorize_app (string id, uint req_accuracy, out bool authorized, out uint allowed_accuracy) {
 			debug ("Request for '%s' at level '%u'", id, req_accuracy);
 
 			DesktopAppInfo app_info = new DesktopAppInfo (id + ".desktop");
@@ -97,9 +118,8 @@ namespace Ag {
 				var stored_accuracy = remembered_accuracy.get_uint32();
 				if (req_accuracy <= stored_accuracy) {
 					authorized = true;
-				} else {
-					authorized = false;
 				}
+
 				allowed_accuracy = req_accuracy;
 				return;
 			}
@@ -107,21 +127,10 @@ namespace Ag {
 			string app_name = app_info.get_display_name ();
 			string accuracy_string = accuracy_to_string (app_name, req_accuracy);
 
-			debug ("Registering client...");
-			get_geoclue_client.begin ((obj, res) => {
-				client = get_geoclue_client.end (res);
-				try {
-					client.start ();
-				} catch (Error e) {
-					warning ("Error while registering geoclue client: %s", e.message);
-				}
-			}); 
-
 			var dialog = new Widgets.Geoclue2Dialog (accuracy_string, app_name, app_info.get_icon ().to_string ());
 			dialog.show_all ();
 
 			var result = dialog.run ();
-			var remember = dialog.remember_checked ();
 
 			switch (result) {
 				case Gtk.ResponseType.YES:
@@ -132,23 +141,13 @@ namespace Ag {
 					break;
 			}
 
-			if (remember) {
-				if(authorized) {
-					remember_app (id, new Variant.uint32 (req_accuracy));
-				} else {
-					remember_app (id, new Variant.uint32 (0));
-				}
+			if (authorized) {
+				remember_app (id, new Variant.uint32 (req_accuracy));
+			} else {
+				remember_app (id, new Variant.uint32 (0));
 			}
 
 			dialog.destroy ();
-
-			if (client != null) {
-				try {
-					client.stop ();
-				} catch (Error e) {
-					warning ("Error while stopping geoclue client: %s", e.message);
-				}
-			}
 
             allowed_accuracy = req_accuracy;
         }
@@ -180,11 +179,11 @@ namespace Ag {
 		}
 
         private async void register_with_geoclue () {
-            yield Utils.register_with_geoclue (app_id);
+            yield Utils.register_with_geoclue (application_id);
         }
 
-		private async GeoClue2Client get_geoclue_client () {
-			return yield Utils.get_geoclue2_client (app_id);
+		private async GeoClue2Client? get_geoclue_client () {
+			return yield Utils.get_geoclue2_client (application_id);
 		}
 
 		private void load_remembered_apps () {
