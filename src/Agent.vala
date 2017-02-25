@@ -94,8 +94,9 @@ namespace Ag {
 
 			Variant remembered_accuracy = get_remembered_accuracy (id);
 			if (remembered_accuracy != null) {
-				var stored_accuracy = remembered_accuracy.get_uint32();
-				if (req_accuracy <= stored_accuracy) {
+				var stored_accuracy = remembered_accuracy.get_child_value (1).get_uint32();
+				var stored_auth = remembered_accuracy.get_child_value (0).get_boolean ();
+				if (req_accuracy <= stored_accuracy && stored_auth) {
 					authorized = true;
 					allowed_accuracy = req_accuracy;
 					return;
@@ -129,11 +130,7 @@ namespace Ag {
 					break;
 			}
 
-			if (authorized) {
-				remember_app (id, new Variant.uint32 (req_accuracy));
-			} else {
-				remember_app (id, new Variant.uint32 (0));
-			}
+			remember_app (id, authorized, req_accuracy);
 
 			dialog.destroy ();
 
@@ -186,13 +183,16 @@ namespace Ag {
 			remembered_apps = new VariantDict(settings.get_value("remembered-apps"));
 		}
 
-		public void remember_app (string desktop_id, Variant accuracy_level) {
-			remembered_apps.insert_value (desktop_id, accuracy_level);
+		public void remember_app (string desktop_id, bool authorized, uint32 accuracy_level) {
+			Variant[2] tuple_vals = new Variant[2];
+			tuple_vals[0] = new Variant.boolean (authorized);
+			tuple_vals[1] = new Variant.uint32 (accuracy_level);
+			remembered_apps.insert_value (desktop_id, new Variant.tuple (tuple_vals));
 			settings.set_value ("remembered-apps", remembered_apps.end ());
 		}
 
 		public Variant get_remembered_accuracy (string desktop_id) {
-			return remembered_apps.lookup_value (desktop_id, GLib.VariantType.UINT32);
+			return remembered_apps.lookup_value (desktop_id, GLib.VariantType.TUPLE);
 		}
     }
 
