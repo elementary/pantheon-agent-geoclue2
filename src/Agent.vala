@@ -56,7 +56,6 @@ namespace Ag {
 			    register_with_geoclue.begin ();
 		    } catch (Error e) {
 			    error ("Error while registering the agent: %s \n", e.message);
-			    return;
 		    }
 		    
 			debug ("Registering client...");
@@ -99,7 +98,7 @@ namespace Ag {
 		    base.dbus_unregister (connection, object_path);
 	    }
         
-        public async void authorize_app (string id, uint req_accuracy, out bool authorized, out uint allowed_accuracy) {
+        public void authorize_app (string id, uint req_accuracy, out bool authorized, out uint allowed_accuracy) {
 			debug ("Request for '%s' at level '%u'", id, req_accuracy);
 
 			DesktopAppInfo app_info = new DesktopAppInfo (id + ".desktop");
