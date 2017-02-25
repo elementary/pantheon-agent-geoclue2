@@ -94,8 +94,8 @@ namespace Ag {
 
 			Variant? remembered_accuracy = get_remembered_accuracy (id);
 			if (remembered_accuracy != null) {
-				var stored_accuracy = remembered_accuracy.get_child_value (1).get_uint32();
 				var stored_auth = remembered_accuracy.get_child_value (0).get_boolean ();
+				var stored_accuracy = remembered_accuracy.get_child_value (1).get_uint32 ();				
 				if (req_accuracy <= stored_accuracy && stored_auth) {
 					authorized = true;
 					allowed_accuracy = req_accuracy;
