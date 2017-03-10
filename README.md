@@ -1,7 +1,6 @@
 # Pantheon Geoclue2 Agent
 [![l10n](https://l10n.elementary.io/widgets/desktop/pantheon-agent-geoclue2/svg-badge.svg)](https://l10n.elementary.io/projects/desktop/pantheon-agent-geoclue2)
 
-
 ## Building, Testing, and Installation
 
 You'll need the following dependencies:
