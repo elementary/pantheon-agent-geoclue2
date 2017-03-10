@@ -12,6 +12,12 @@ set (DOLLAR "$")
 set (LIBDIR "${CMAKE_INSTALL_PREFIX}/lib")
 set (EXECDIR "${LIBDIR}/geoclue2-1-pantheon")
 
+# CTest
+include (CTest)
+if (BUILD_TESTING)
+    add_test (NAME validate-desktop-file COMMAND desktop-file-validate ${CMAKE_BINARY_DIR}/data/org.pantheon.agent-geoclue2.desktop)
+endif ()
+
 add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
 add_definitions (-w)
 
