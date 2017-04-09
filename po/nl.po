@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:17+0000\n"
-"PO-Revision-Date: 2017-04-08 11:09+0000\n"
-"Last-Translator: Jonathan Moerman <jonathanmoerman@gmail.com>\n"
+"PO-Revision-Date: 2017-04-09 17:37+0000\n"
+"Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
 "Language-Team: Dutch <http://weblate.elementary.io/projects/desktop/pantheon-"
 "agent-geoclue2/nl/>\n"
 "Language: nl\n"
@@ -17,11 +17,11 @@ msgstr ""
 
 #: ../src/Geoclue2Dialog.vala:26
 msgid "Location Dialog"
-msgstr ""
+msgstr "Locatiedialoog"
 
 #: ../src/Geoclue2Dialog.vala:30
 msgid "Allow %s to Access This Device's Location?"
-msgstr "Sta %s toe om dit apparaat's locatie te weten?"
+msgstr "Geef %s toegang tot de locatie van dit apparaat?"
 
 #: ../src/Geoclue2Dialog.vala:62
 msgid "Deny"
@@ -37,12 +37,11 @@ msgstr "het huidige land"
 
 #: ../src/Agent.vala:156
 msgid "the nearest city or town"
-msgstr "de dichtstbijzijnde stad of gemeente"
+msgstr "de dichtstbijzijnde stad of dorp"
 
 #: ../src/Agent.vala:159
-#, fuzzy
 msgid "the nearest neighborhood"
-msgstr "de dichtstbijzijnde buurt"
+msgstr "de onmiddellijke omgeving"
 
 #: ../src/Agent.vala:162
 msgid "the nearest street"
@@ -62,5 +61,5 @@ msgid ""
 "href='settings://security/privacy/location'>Location Settings…</a>"
 msgstr ""
 "%s zal in staat zijn om %s te detecteren. Machtigingen kunnen in <a "
-"href='settings://security/privacy/location'>Locatie instellingen…</a> "
+"href='settings://security/privacy/location'>Locatie-instellingen…</a> "
 "aangepast worden"
