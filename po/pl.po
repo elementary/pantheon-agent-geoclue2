@@ -3,14 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:17+0000\n"
-"PO-Revision-Date: 2017-02-19 14:25+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-04-10 19:23+0000\n"
+"Last-Translator: Robert Reimus <partisan@o2.pl>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/desktop/pantheon-"
+"agent-geoclue2/pl/>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:33+0000\n"
-"X-Generator: Launchpad (build 18329)\n"
 
 #: ../src/Geoclue2Dialog.vala:26
 msgid "Location Dialog"
@@ -21,36 +25,44 @@ msgid "Allow %s to Access This Device's Location?"
 msgstr ""
 
 #: ../src/Geoclue2Dialog.vala:62
+#, fuzzy
 msgid "Deny"
-msgstr ""
+msgstr "Odmowa"
 
 #: ../src/Geoclue2Dialog.vala:63
+#, fuzzy
 msgid "Allow"
-msgstr ""
+msgstr "Zezwól"
 
 #: ../src/Agent.vala:153
+#, fuzzy
 msgid "the current country"
-msgstr ""
+msgstr "Obecny kraj"
 
 #: ../src/Agent.vala:156
+#, fuzzy
 msgid "the nearest city or town"
-msgstr ""
+msgstr "najbliższe miasto"
 
 #: ../src/Agent.vala:159
+#, fuzzy
 msgid "the nearest neighborhood"
-msgstr ""
+msgstr "najbliższe sąsiedztwo"
 
 #: ../src/Agent.vala:162
+#, fuzzy
 msgid "the nearest street"
-msgstr ""
+msgstr "najbliższa ulica"
 
 #: ../src/Agent.vala:165
+#, fuzzy
 msgid "your exact location"
-msgstr ""
+msgstr "Twoja dokładna lokalizacja"
 
 #: ../src/Agent.vala:168
+#, fuzzy
 msgid "your location"
-msgstr ""
+msgstr "Twoja lokalizacja"
 
 #: ../src/Agent.vala:172
 msgid ""
