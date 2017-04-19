@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:17+0000\n"
-"PO-Revision-Date: 2017-04-10 19:23+0000\n"
-"Last-Translator: Robert Reimus <partisan@o2.pl>\n"
+"PO-Revision-Date: 2017-04-19 10:23+0000\n"
+"Last-Translator: Piotr Strebski <strebski@o2.pl>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/desktop/pantheon-"
 "agent-geoclue2/pl/>\n"
 "Language: pl\n"
@@ -18,49 +18,41 @@ msgstr ""
 
 #: ../src/Geoclue2Dialog.vala:26
 msgid "Location Dialog"
-msgstr ""
+msgstr "Dialog lokalizacji"
 
 #: ../src/Geoclue2Dialog.vala:30
 msgid "Allow %s to Access This Device's Location?"
-msgstr ""
+msgstr "Pozwolić %s na uzyskanie dostępu do położenia tego urządzenia?"
 
 #: ../src/Geoclue2Dialog.vala:62
-#, fuzzy
 msgid "Deny"
-msgstr "Odmowa"
+msgstr "Odmów"
 
 #: ../src/Geoclue2Dialog.vala:63
-#, fuzzy
 msgid "Allow"
 msgstr "Zezwól"
 
 #: ../src/Agent.vala:153
-#, fuzzy
 msgid "the current country"
-msgstr "Obecny kraj"
+msgstr "bieżący kraj"
 
 #: ../src/Agent.vala:156
-#, fuzzy
 msgid "the nearest city or town"
 msgstr "najbliższe miasto"
 
 #: ../src/Agent.vala:159
-#, fuzzy
 msgid "the nearest neighborhood"
 msgstr "najbliższe sąsiedztwo"
 
 #: ../src/Agent.vala:162
-#, fuzzy
 msgid "the nearest street"
 msgstr "najbliższa ulica"
 
 #: ../src/Agent.vala:165
-#, fuzzy
 msgid "your exact location"
 msgstr "Twoja dokładna lokalizacja"
 
 #: ../src/Agent.vala:168
-#, fuzzy
 msgid "your location"
 msgstr "Twoja lokalizacja"
 
@@ -69,3 +61,5 @@ msgid ""
 "%s will be able to detect %s. Permissions can be changed in <a "
 "href='settings://security/privacy/location'>Location Settings…</a>"
 msgstr ""
+"%s będzie mogło wykrywać %s. Uprawnienia mogą zostać zmienione w <a "
+"href='settings://security/privacy/location'>Ustawieniach lokalizacji…</a>"
