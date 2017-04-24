@@ -5,10 +5,11 @@
 
 You'll need the following dependencies:
 
- - valac-0.30
- - libdbus-glib-1-dev
- - libgtk-3.0-dev
- - libgeoclue-2-dev
+* cmake
+* libdbus-glib-1-dev
+* libgeoclue-2-dev
+* libgtk-3.0-dev
+* valac
 
 It's recommended to create a clean build environment
 
