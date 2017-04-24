@@ -6,6 +6,7 @@
 You'll need the following dependencies:
 
 * cmake
+* cmake-elementary
 * libdbus-glib-1-dev
 * libgeoclue-2-dev
 * libgtk-3-dev
