@@ -2,15 +2,15 @@ project (pantheon-agent-geoclue2)
 
 cmake_minimum_required (VERSION 2.8)
 
-set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
-set (PKGDATADIR "${DATADIR}/${CMAKE_PROJECT_NAME}")
+include (GNUInstallDirs)
+
+set (PKGDATADIR "${CMAKE_INSTALL_FULL_DATADIR}/${CMAKE_PROJECT_NAME}")
 set (GETTEXT_PACKAGE ${CMAKE_PROJECT_NAME})
 set (EXEC_NAME ${CMAKE_PROJECT_NAME})
 set (VERSION "0.0.1")
 set (DOLLAR "$")
 
-set (LIBDIR "${CMAKE_INSTALL_PREFIX}/lib")
-set (EXECDIR "${LIBDIR}/geoclue2-1-pantheon")
+set (EXECDIR "${CMAKE_INSTALL_FULL_LIBEXECDIR}/geoclue2-1-pantheon")
 
 # CTest
 include (CTest)
