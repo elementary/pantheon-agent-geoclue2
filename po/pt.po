@@ -3,57 +3,62 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:17+0000\n"
-"PO-Revision-Date: 2017-02-19 14:25+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-05-24 13:50+0000\n"
+"Last-Translator: Luís Lima <geral@liqensoft.com>\n"
+"Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop"
+"/pantheon-agent-geoclue2/pt/>\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:33+0000\n"
-"X-Generator: Launchpad (build 18329)\n"
 
 #: ../src/Geoclue2Dialog.vala:26
 msgid "Location Dialog"
-msgstr ""
+msgstr "Localização do Diálogo"
 
 #: ../src/Geoclue2Dialog.vala:30
 msgid "Allow %s to Access This Device's Location?"
-msgstr ""
+msgstr "Permitir que %s Aceda à Localização deste dispositivo?"
 
 #: ../src/Geoclue2Dialog.vala:62
 msgid "Deny"
-msgstr ""
+msgstr "Negar"
 
 #: ../src/Geoclue2Dialog.vala:63
 msgid "Allow"
-msgstr ""
+msgstr "Permitir"
 
 #: ../src/Agent.vala:153
 msgid "the current country"
-msgstr ""
+msgstr "país atual"
 
 #: ../src/Agent.vala:156
 msgid "the nearest city or town"
-msgstr ""
+msgstr "cidade ou vila próxima"
 
 #: ../src/Agent.vala:159
 msgid "the nearest neighborhood"
-msgstr ""
+msgstr "vizinhança próxima"
 
 #: ../src/Agent.vala:162
 msgid "the nearest street"
-msgstr ""
+msgstr "rua próxima"
 
 #: ../src/Agent.vala:165
 msgid "your exact location"
-msgstr ""
+msgstr "o seu local exato"
 
 #: ../src/Agent.vala:168
 msgid "your location"
-msgstr ""
+msgstr "a sua localização"
 
 #: ../src/Agent.vala:172
 msgid ""
 "%s will be able to detect %s. Permissions can be changed in <a "
 "href='settings://security/privacy/location'>Location Settings…</a>"
 msgstr ""
+"%s conseguirá detetar %s. As permissões podem ser modificadas em <a "
+"href='settings://security/privacy/location'>Definições de Localização...</a>"
