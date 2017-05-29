@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-APP_ID = "org.pantheon.agent-geoclue2"
+APP_ID = "io.elementary.desktop.agent-geoclue2"
 
 import sys
 from ConfigParser import SafeConfigParser
