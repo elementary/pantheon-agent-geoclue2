@@ -33,7 +33,7 @@ namespace Ag {
         private VariantDict remembered_apps;
 
         construct {
-            application_id = "org.pantheon.agent-geoclue2";
+            application_id = "io.elementary.desktop.agent-geoclue2";
             settings = new Settings (application_id);
 
             settings.changed.connect ((key) => {

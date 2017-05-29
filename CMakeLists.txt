@@ -15,7 +15,7 @@ set (EXECDIR "${CMAKE_INSTALL_FULL_LIBEXECDIR}/geoclue2-1-pantheon")
 # CTest
 include (CTest)
 if (BUILD_TESTING)
-    add_test (NAME validate-desktop-file COMMAND desktop-file-validate ${CMAKE_BINARY_DIR}/data/org.pantheon.agent-geoclue2.desktop)
+    add_test (NAME validate-desktop-file COMMAND desktop-file-validate ${CMAKE_BINARY_DIR}/data/io.elementary.desktop.agent-geoclue2.desktop)
 endif ()
 
 add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
