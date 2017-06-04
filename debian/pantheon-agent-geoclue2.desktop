@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=GeoClue2 Authentication Agent
 Comment=GeoClue2 Authentication Agent
-Exec=/usr/lib/geoclue2-1-pantheon/pantheon-agent-geoclue2
+Exec=/usr/libexec/geoclue2-1-pantheon/pantheon-agent-geoclue2
 Terminal=false
 Type=Application
 Categories=
