@@ -3,54 +3,59 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:17+0000\n"
-"PO-Revision-Date: 2017-02-19 14:25+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-06-17 09:28+0000\n"
+"Last-Translator: Rajeev Kumar <irajeevankumar@gmail.com>\n"
+"Language-Team: Tamil <https://l10n.elementary.io/projects/desktop/pantheon-"
+"agent-geoclue2/ta/>\n"
+"Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:33+0000\n"
-"X-Generator: Launchpad (build 18329)\n"
 
 #: ../src/Geoclue2Dialog.vala:26
+#, fuzzy
 msgid "Location Dialog"
-msgstr ""
+msgstr "இருப்பிட அறிவிப்பு"
 
 #: ../src/Geoclue2Dialog.vala:30
 msgid "Allow %s to Access This Device's Location?"
-msgstr ""
+msgstr "இந்த சாதனத்தின் இருப்பிடத்தை அணுகுவதற்கு %s ஐ அனுமதிக்கவா?"
 
 #: ../src/Geoclue2Dialog.vala:62
 msgid "Deny"
-msgstr ""
+msgstr "மறு"
 
 #: ../src/Geoclue2Dialog.vala:63
 msgid "Allow"
-msgstr ""
+msgstr "அனுமதி"
 
 #: ../src/Agent.vala:153
 msgid "the current country"
-msgstr ""
+msgstr "தற்போதைய நாடு"
 
 #: ../src/Agent.vala:156
+#, fuzzy
 msgid "the nearest city or town"
-msgstr ""
+msgstr "அருகிலுள்ள நகரம் அல்லது தாலுக்கா"
 
 #: ../src/Agent.vala:159
 msgid "the nearest neighborhood"
-msgstr ""
+msgstr "மிக அருகில் இருக்கும் சுற்றுப்பறம்"
 
 #: ../src/Agent.vala:162
 msgid "the nearest street"
-msgstr ""
+msgstr "அருகில் உள்ள தெரு"
 
 #: ../src/Agent.vala:165
 msgid "your exact location"
-msgstr ""
+msgstr "உங்கள் சரியான இடம்"
 
 #: ../src/Agent.vala:168
 msgid "your location"
-msgstr ""
+msgstr "உங்களுடைய இருப்பிடம்"
 
 #: ../src/Agent.vala:172
 msgid ""
