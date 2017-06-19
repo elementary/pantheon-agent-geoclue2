@@ -1,59 +1,64 @@
+# Lawrence Aberba <karabutaworld@gmail.com>, 2017.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Akan (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-27 15:17+0000\n"
-"PO-Revision-Date: 2017-02-19 14:25+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2017-06-19 12:42+0000\n"
+"PO-Revision-Date: 2017-06-19 13:53+0000\n"
+"Last-Translator: Lawrence Aberba <karabutaworld@gmail.com>\n"
+"Language-Team: Akan <karabutaworld@gmail.com>\n"
+"Language: ak\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Gtranslator 2.91.7\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:32+0000\n"
-"X-Generator: Launchpad (build 18329)\n"
 
 #: ../src/Geoclue2Dialog.vala:26
 msgid "Location Dialog"
-msgstr ""
+msgstr "Beae Hokwan Pono"
 
 #: ../src/Geoclue2Dialog.vala:30
 msgid "Allow %s to Access This Device's Location?"
-msgstr ""
+msgstr "Wopɛ Sɛ Woma %s Hokwan Ma Ehu Beae a Wowɔ?"
 
 #: ../src/Geoclue2Dialog.vala:62
 msgid "Deny"
-msgstr ""
+msgstr "Mma Hokwan"
 
 #: ../src/Geoclue2Dialog.vala:63
 msgid "Allow"
-msgstr ""
+msgstr "Ma Hokwan"
 
 #: ../src/Agent.vala:153
 msgid "the current country"
-msgstr ""
+msgstr "kuro a wowɔ"
 
 #: ../src/Agent.vala:156
 msgid "the nearest city or town"
-msgstr ""
+msgstr "mantam a wowɔ"
 
 #: ../src/Agent.vala:159
 msgid "the nearest neighborhood"
-msgstr ""
+msgstr "mpɔtam a wowɔ"
 
 #: ../src/Agent.vala:162
 msgid "the nearest street"
-msgstr ""
+msgstr "ɛkwan a ɛbɛn wo"
 
 #: ../src/Agent.vala:165
 msgid "your exact location"
-msgstr ""
+msgstr "beae a wowɔ pɔtee"
 
 #: ../src/Agent.vala:168
 msgid "your location"
-msgstr ""
+msgstr "beae a wowɔ"
 
 #: ../src/Agent.vala:172
 msgid ""
 "%s will be able to detect %s. Permissions can be changed in <a "
 "href='settings://security/privacy/location'>Location Settings…</a>"
 msgstr ""
+"%s behu %s. Wobetumi asan asesã hokwan no bio wɔ <a "
+"href='settings://security/privacy/location'>Beae Ho Nhyehyɛe Hɔ…</a>"
