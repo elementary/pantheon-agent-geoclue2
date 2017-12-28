@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Location Dialog
+Exec=/usr/libexec/geoclue2-1-pantheon/pantheon-agent-geoclue2 
+Icon=find-location
+Terminal=false
+Type=Application
+StartupNotify=false
+NoDisplay=true
