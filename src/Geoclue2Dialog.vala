@@ -54,7 +54,7 @@ namespace Ag.Widgets {
             var grid = new Gtk.Grid ();
             grid.column_spacing = 12;
             grid.row_spacing = 6;
-            grid.margin_left = grid.margin_right = 12;
+            grid.margin_start = grid.margin_end = 12;
             grid.attach (overlay, 0, 0, 1, 3);
             grid.attach (heading, 1, 0, 1, 1);
             grid.attach (message_label, 1, 1, 1, 1);
@@ -68,7 +68,7 @@ namespace Ag.Widgets {
             get_content_area ().add (grid);
 
             var action_area = get_action_area ();
-            action_area.margin_right = 6;
+            action_area.margin_start = action_area.margin_end = 6;
             action_area.margin_bottom = 6;
             action_area.margin_top = 14;
         }
