@@ -5,23 +5,18 @@
 
 You'll need the following dependencies:
 
-* cmake
-* cmake-elementary
 * libdbus-glib-1-dev
 * libgeoclue-2-dev
 * libgtk-3-dev
+* meson
 * valac
-
-It's recommended to create a clean build environment
-
-    mkdir build
-    cd build/
     
-Run `cmake` to configure the build environment and then `make all test` to build and run automated tests
+Run `meson` to configure the build environment and then `ninja test` to build and run automated tests
 
-    cmake -DCMAKE_INSTALL_PREFIX=/usr ..
-    make all test
+    meson build --prefix=/usr
+    cd build
+    ninja test
     
-To install, use `make install`
+To install, use `ninja install`
 
-    sudo make install
+    sudo ninja install
