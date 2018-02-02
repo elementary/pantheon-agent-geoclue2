@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:17+0000\n"
-"PO-Revision-Date: 2018-02-02 19:44+0000\n"
-"Last-Translator: Muha Aliss <muhaaliss@gmail.com>\n"
+"PO-Revision-Date: 2018-02-03 00:06+0000\n"
+"Last-Translator: Furkan Ege Öztürk <furkanegeozturk@galatasaray.net>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/desktop"
 "/pantheon-agent-geoclue2/tr/>\n"
 "Language: tr\n"
@@ -17,46 +17,49 @@ msgstr ""
 
 #: ../src/Geoclue2Dialog.vala:26
 msgid "Location Dialog"
-msgstr "Konum iletişim kutusu"
+msgstr "Konum İletişim Kutusu"
 
 #: ../src/Geoclue2Dialog.vala:30
 msgid "Allow %s to Access This Device's Location?"
-msgstr ""
+msgstr "%s 'e bu cihazın konum bilgisine erişmesine izin ver?"
 
 #: ../src/Geoclue2Dialog.vala:62
 msgid "Deny"
-msgstr ""
+msgstr "Reddet"
 
 #: ../src/Geoclue2Dialog.vala:63
 msgid "Allow"
-msgstr ""
+msgstr "Kabul Et"
 
 #: ../src/Agent.vala:153
 msgid "the current country"
-msgstr ""
+msgstr "mevcut ülke"
 
 #: ../src/Agent.vala:156
 msgid "the nearest city or town"
-msgstr ""
+msgstr "en yakın şehir"
 
 #: ../src/Agent.vala:159
 msgid "the nearest neighborhood"
-msgstr ""
+msgstr "en yakın mahalle"
 
 #: ../src/Agent.vala:162
 msgid "the nearest street"
-msgstr ""
+msgstr "en yakın cadde/sokak"
 
 #: ../src/Agent.vala:165
 msgid "your exact location"
-msgstr ""
+msgstr "kesin konumunuz"
 
 #: ../src/Agent.vala:168
 msgid "your location"
-msgstr ""
+msgstr "konumunuz"
 
 #: ../src/Agent.vala:172
 msgid ""
 "%s will be able to detect %s. Permissions can be changed in <a "
 "href='settings://security/privacy/location'>Location Settings…</a>"
 msgstr ""
+"%s, %s 'u algılayabilecek. İzinler <a "
+"href='settings://security/privacy/location'>Konum Ayarları</a>'ndan "
+"değiştirilebilir"
