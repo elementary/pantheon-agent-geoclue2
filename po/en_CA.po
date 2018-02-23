@@ -3,57 +3,63 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:17+0000\n"
-"PO-Revision-Date: 2017-02-19 14:25+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-02-23 20:55+0000\n"
+"Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
+"Language-Team: English (Canada) "
+"<https://weblate.elementary.io/projects/desktop/pantheon-agent-"
+"geoclue2/en_CA/>\n"
+"Language: en_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:33+0000\n"
-"X-Generator: Launchpad (build 18329)\n"
 
 #: ../src/Geoclue2Dialog.vala:26
 msgid "Location Dialog"
-msgstr ""
+msgstr "Location Dialog"
 
 #: ../src/Geoclue2Dialog.vala:30
 msgid "Allow %s to Access This Device's Location?"
-msgstr ""
+msgstr "Allow %s to Access This Device's Location?"
 
 #: ../src/Geoclue2Dialog.vala:62
 msgid "Deny"
-msgstr ""
+msgstr "Deny"
 
 #: ../src/Geoclue2Dialog.vala:63
 msgid "Allow"
-msgstr ""
+msgstr "Allow"
 
 #: ../src/Agent.vala:153
 msgid "the current country"
-msgstr ""
+msgstr "the current country"
 
 #: ../src/Agent.vala:156
 msgid "the nearest city or town"
-msgstr ""
+msgstr "the nearest city or town"
 
 #: ../src/Agent.vala:159
 msgid "the nearest neighborhood"
-msgstr ""
+msgstr "the nearest neighbourhood"
 
 #: ../src/Agent.vala:162
 msgid "the nearest street"
-msgstr ""
+msgstr "the nearest street"
 
 #: ../src/Agent.vala:165
 msgid "your exact location"
-msgstr ""
+msgstr "your exact location"
 
 #: ../src/Agent.vala:168
 msgid "your location"
-msgstr ""
+msgstr "your location"
 
 #: ../src/Agent.vala:172
 msgid ""
 "%s will be able to detect %s. Permissions can be changed in <a "
 "href='settings://security/privacy/location'>Location Settings…</a>"
 msgstr ""
+"%s will be able to detect %s. Permissions can be changed in <a "
+"href='settings://security/privacy/location'>Location Settings…</a>"
