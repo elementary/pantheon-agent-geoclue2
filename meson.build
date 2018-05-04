@@ -1,6 +1,6 @@
 project('pantheon-agent-geoclue2', 'vala', 'c')
 
-installdir = join_paths(get_option('prefix'), get_option('libexecdir'), 'geoclue2-1-pantheon')
+install_path = join_paths(get_option('prefix'), get_option('libexecdir'), 'geoclue2-1-pantheon')
 i18n = import('i18n')
 
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name()), language:'c')
@@ -22,12 +22,12 @@ executable(
         dependency('libgeoclue-2.0')
     ],
     install: true,
-    install_dir: installdir
+    install_dir: install_path
 )
 
 conf_data = configuration_data()
 conf_data.set('EXEC_NAME', meson.project_name())
-conf_data.set('EXECDIR', installdir)
+conf_data.set('EXECDIR', install_path)
 
 subdir('data')
 subdir('po')
