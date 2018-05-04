@@ -3,9 +3,15 @@ install_data(
     install_dir: join_paths(get_option('datadir'), 'glib-2.0', 'schemas')
 )
 
+desktop_in = configure_file(
+    input: 'io.elementary.desktop.agent-geoclue2.desktop.in.in',
+    output: '@BASENAME@',
+    configuration: conf_data
+)
+
 i18n.merge_file(
-    input: 'io.elementary.desktop.agent-geoclue2.desktop.in',
-    output: 'io.elementary.desktop.agent-geoclue2.desktop',
+    input: desktop_in,
+    output: '@BASENAME@',
     po_dir: join_paths(meson.source_root(), 'po', 'extra'),
     type: 'desktop',
     install: true,
