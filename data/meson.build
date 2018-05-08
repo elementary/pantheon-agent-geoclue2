@@ -18,8 +18,24 @@ i18n.merge_file(
     install_dir: join_paths(get_option('datadir'), 'applications')
 )
 
+# Daemon File
+configure_file(
+    input: 'org.pantheon.agent-polkit-daemon.desktop.in',
+    output: '@BASENAME@',
+    configuration: conf_data,
+    install_dir: join_paths(get_option('sysconfdir'), 'xdg', 'autostart')
+)
+
+desktop_file_validate = find_program('desktop-file-validate')
+
 test (
     'Validate desktop file',
-    find_program('desktop-file-validate'),
+    desktop_file_validate,
     args: join_paths(meson.current_build_dir (), 'io.elementary.desktop.agent-geoclue2.desktop')
+)
+
+test (
+    'Validate desktop file',
+    desktop_file_validate,
+    args: join_paths(meson.current_build_dir (), 'io.elementary.desktop.agent-geoclue2-daemon.desktop')
 )

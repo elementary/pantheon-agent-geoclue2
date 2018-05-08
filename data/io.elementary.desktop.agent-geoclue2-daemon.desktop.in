@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=GeoClue2 Authentication Agent
+Comment=GeoClue2 Authentication Agent
+Exec=@EXECDIR@/@EXEC_NAME@ 
+Terminal=false
+Type=Application
+NoDisplay=true
+OnlyShowIn=Pantheon;
+X-GNOME-AutoRestart=true
+AutostartCondition=GNOME3 unless-session gnome
