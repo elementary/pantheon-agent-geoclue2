@@ -20,7 +20,7 @@ i18n.merge_file(
 
 # Daemon File
 configure_file(
-    input: 'org.pantheon.agent-polkit-daemon.desktop.in',
+    input: 'io.elementary.desktop.agent-geoclue2-daemon.desktop.in',
     output: '@BASENAME@',
     configuration: conf_data,
     install_dir: join_paths(get_option('sysconfdir'), 'xdg', 'autostart')
