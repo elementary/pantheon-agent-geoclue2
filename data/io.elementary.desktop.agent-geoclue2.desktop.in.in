@@ -1,6 +1,6 @@
 [Desktop Entry]
-_Name=Location Dialog
-Exec=${EXECDIR}/pantheon-agent-geoclue2 
+Name=Location Dialog
+Exec=@EXECDIR@/@EXEC_NAME@ 
 Icon=find-location
 Terminal=false
 Type=Application
