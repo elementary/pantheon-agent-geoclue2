@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-27 15:17+0000\n"
+"POT-Creation-Date: 2018-05-18 10:54-0700\n"
 "PO-Revision-Date: 2017-05-24 13:50+0000\n"
 "Last-Translator: Luís Lima <geral@liqensoft.com>\n"
-"Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop"
-"/pantheon-agent-geoclue2/pt/>\n"
+"Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
+"pantheon-agent-geoclue2/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,50 +15,52 @@ msgstr ""
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:33+0000\n"
 
-#: ../src/Geoclue2Dialog.vala:26
-msgid "Location Dialog"
-msgstr "Localização do Diálogo"
-
-#: ../src/Geoclue2Dialog.vala:30
-msgid "Allow %s to Access This Device's Location?"
-msgstr "Permitir que %s Aceda à Localização deste dispositivo?"
-
-#: ../src/Geoclue2Dialog.vala:62
-msgid "Deny"
-msgstr "Negar"
-
-#: ../src/Geoclue2Dialog.vala:63
-msgid "Allow"
-msgstr "Permitir"
-
-#: ../src/Agent.vala:153
+#: src/Agent.vala:153
 msgid "the current country"
 msgstr "país atual"
 
-#: ../src/Agent.vala:156
+#: src/Agent.vala:156
 msgid "the nearest city or town"
 msgstr "cidade ou vila próxima"
 
-#: ../src/Agent.vala:159
+#: src/Agent.vala:159
 msgid "the nearest neighborhood"
 msgstr "vizinhança próxima"
 
-#: ../src/Agent.vala:162
+#: src/Agent.vala:162
 msgid "the nearest street"
 msgstr "rua próxima"
 
-#: ../src/Agent.vala:165
+#: src/Agent.vala:165
 msgid "your exact location"
 msgstr "o seu local exato"
 
-#: ../src/Agent.vala:168
+#: src/Agent.vala:168
 msgid "your location"
 msgstr "a sua localização"
 
-#: ../src/Agent.vala:172
+#: src/Agent.vala:172
+#, c-format
 msgid ""
 "%s will be able to detect %s. Permissions can be changed in <a "
 "href='settings://security/privacy/location'>Location Settings…</a>"
 msgstr ""
 "%s conseguirá detetar %s. As permissões podem ser modificadas em <a "
 "href='settings://security/privacy/location'>Definições de Localização...</a>"
+
+#: src/Geoclue2Dialog.vala:26
+msgid "Location Dialog"
+msgstr "Localização do Diálogo"
+
+#: src/Geoclue2Dialog.vala:30
+#, c-format
+msgid "Allow %s to Access This Device's Location?"
+msgstr "Permitir que %s Aceda à Localização deste dispositivo?"
+
+#: src/Geoclue2Dialog.vala:62
+msgid "Deny"
+msgstr "Negar"
+
+#: src/Geoclue2Dialog.vala:63
+msgid "Allow"
+msgstr "Permitir"

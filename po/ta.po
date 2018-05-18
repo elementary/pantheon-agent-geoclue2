@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-27 15:17+0000\n"
+"POT-Creation-Date: 2018-05-18 10:54-0700\n"
 "PO-Revision-Date: 2017-06-17 09:28+0000\n"
 "Last-Translator: Rajeev Kumar <irajeevankumar@gmail.com>\n"
 "Language-Team: Tamil <https://l10n.elementary.io/projects/desktop/pantheon-"
@@ -15,50 +15,52 @@ msgstr ""
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:33+0000\n"
 
-#: ../src/Geoclue2Dialog.vala:26
-#, fuzzy
-msgid "Location Dialog"
-msgstr "இருப்பிட அறிவிப்பு"
-
-#: ../src/Geoclue2Dialog.vala:30
-msgid "Allow %s to Access This Device's Location?"
-msgstr "இந்த சாதனத்தின் இருப்பிடத்தை அணுகுவதற்கு %s ஐ அனுமதிக்கவா?"
-
-#: ../src/Geoclue2Dialog.vala:62
-msgid "Deny"
-msgstr "மறு"
-
-#: ../src/Geoclue2Dialog.vala:63
-msgid "Allow"
-msgstr "அனுமதி"
-
-#: ../src/Agent.vala:153
+#: src/Agent.vala:153
 msgid "the current country"
 msgstr "தற்போதைய நாடு"
 
-#: ../src/Agent.vala:156
+#: src/Agent.vala:156
 #, fuzzy
 msgid "the nearest city or town"
 msgstr "அருகிலுள்ள நகரம் அல்லது தாலுக்கா"
 
-#: ../src/Agent.vala:159
+#: src/Agent.vala:159
 msgid "the nearest neighborhood"
 msgstr "மிக அருகில் இருக்கும் சுற்றுப்பறம்"
 
-#: ../src/Agent.vala:162
+#: src/Agent.vala:162
 msgid "the nearest street"
 msgstr "அருகில் உள்ள தெரு"
 
-#: ../src/Agent.vala:165
+#: src/Agent.vala:165
 msgid "your exact location"
 msgstr "உங்கள் சரியான இடம்"
 
-#: ../src/Agent.vala:168
+#: src/Agent.vala:168
 msgid "your location"
 msgstr "உங்களுடைய இருப்பிடம்"
 
-#: ../src/Agent.vala:172
+#: src/Agent.vala:172
+#, c-format
 msgid ""
 "%s will be able to detect %s. Permissions can be changed in <a "
 "href='settings://security/privacy/location'>Location Settings…</a>"
 msgstr ""
+
+#: src/Geoclue2Dialog.vala:26
+#, fuzzy
+msgid "Location Dialog"
+msgstr "இருப்பிட அறிவிப்பு"
+
+#: src/Geoclue2Dialog.vala:30
+#, c-format
+msgid "Allow %s to Access This Device's Location?"
+msgstr "இந்த சாதனத்தின் இருப்பிடத்தை அணுகுவதற்கு %s ஐ அனுமதிக்கவா?"
+
+#: src/Geoclue2Dialog.vala:62
+msgid "Deny"
+msgstr "மறு"
+
+#: src/Geoclue2Dialog.vala:63
+msgid "Allow"
+msgstr "அனுமதி"

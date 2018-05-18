@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-27 15:17+0000\n"
+"POT-Creation-Date: 2018-05-18 10:54-0700\n"
 "PO-Revision-Date: 2018-02-03 00:06+0000\n"
 "Last-Translator: Furkan Ege Öztürk <furkanegeozturk@galatasaray.net>\n"
-"Language-Team: Turkish <https://weblate.elementary.io/projects/desktop"
-"/pantheon-agent-geoclue2/tr/>\n"
+"Language-Team: Turkish <https://weblate.elementary.io/projects/desktop/"
+"pantheon-agent-geoclue2/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,51 +15,52 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:33+0000\n"
 
-#: ../src/Geoclue2Dialog.vala:26
-msgid "Location Dialog"
-msgstr "Konum İletişim Kutusu"
-
-#: ../src/Geoclue2Dialog.vala:30
-msgid "Allow %s to Access This Device's Location?"
-msgstr "%s 'e bu cihazın konum bilgisine erişmesine izin ver?"
-
-#: ../src/Geoclue2Dialog.vala:62
-msgid "Deny"
-msgstr "Reddet"
-
-#: ../src/Geoclue2Dialog.vala:63
-msgid "Allow"
-msgstr "Kabul Et"
-
-#: ../src/Agent.vala:153
+#: src/Agent.vala:153
 msgid "the current country"
 msgstr "mevcut ülke"
 
-#: ../src/Agent.vala:156
+#: src/Agent.vala:156
 msgid "the nearest city or town"
 msgstr "en yakın şehir"
 
-#: ../src/Agent.vala:159
+#: src/Agent.vala:159
 msgid "the nearest neighborhood"
 msgstr "en yakın mahalle"
 
-#: ../src/Agent.vala:162
+#: src/Agent.vala:162
 msgid "the nearest street"
 msgstr "en yakın cadde/sokak"
 
-#: ../src/Agent.vala:165
+#: src/Agent.vala:165
 msgid "your exact location"
 msgstr "kesin konumunuz"
 
-#: ../src/Agent.vala:168
+#: src/Agent.vala:168
 msgid "your location"
 msgstr "konumunuz"
 
-#: ../src/Agent.vala:172
+#: src/Agent.vala:172
+#, c-format
 msgid ""
 "%s will be able to detect %s. Permissions can be changed in <a "
 "href='settings://security/privacy/location'>Location Settings…</a>"
 msgstr ""
-"%s, %s 'u algılayabilecek. İzinler <a "
-"href='settings://security/privacy/location'>Konum Ayarları</a>'ndan "
-"değiştirilebilir"
+"%s, %s 'u algılayabilecek. İzinler <a href='settings://security/privacy/"
+"location'>Konum Ayarları</a>'ndan değiştirilebilir"
+
+#: src/Geoclue2Dialog.vala:26
+msgid "Location Dialog"
+msgstr "Konum İletişim Kutusu"
+
+#: src/Geoclue2Dialog.vala:30
+#, c-format
+msgid "Allow %s to Access This Device's Location?"
+msgstr "%s 'e bu cihazın konum bilgisine erişmesine izin ver?"
+
+#: src/Geoclue2Dialog.vala:62
+msgid "Deny"
+msgstr "Reddet"
+
+#: src/Geoclue2Dialog.vala:63
+msgid "Allow"
+msgstr "Kabul Et"
