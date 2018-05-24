@@ -1,4 +1,8 @@
-project('pantheon-agent-geoclue2', 'vala', 'c')
+project(
+    'pantheon-agent-geoclue2',
+    'vala', 'c',
+    version: '1.0'
+)
 
 install_path = join_paths(get_option('prefix'), get_option('libexecdir'), 'geoclue2-1-pantheon')
 i18n = import('i18n')
