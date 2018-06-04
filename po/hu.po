@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-18 10:54-0700\n"
-"PO-Revision-Date: 2018-06-04 00:08+0000\n"
+"PO-Revision-Date: 2018-06-04 11:58+0000\n"
 "Last-Translator: Csepi Árpád <banderaszkormos@gmail.com>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/desktop"
 "/pantheon-agent-geoclue2/hu/>\n"
@@ -21,7 +21,7 @@ msgstr "a jelenlegi ország"
 
 #: src/Agent.vala:156
 msgid "the nearest city or town"
-msgstr ""
+msgstr "a legközelebbi város"
 
 #: src/Agent.vala:159
 msgid "the nearest neighborhood"
