@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-18 10:54-0700\n"
-"PO-Revision-Date: 2018-06-04 12:04+0000\n"
-"Last-Translator: Csepi Árpád <banderaszkormos@gmail.com>\n"
+"PO-Revision-Date: 2018-06-04 12:05+0000\n"
+"Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/desktop"
 "/pantheon-agent-geoclue2/hu/>\n"
 "Language: hu\n"
@@ -50,12 +50,12 @@ msgstr ""
 
 #: src/Geoclue2Dialog.vala:26
 msgid "Location Dialog"
-msgstr "Helyszín párbeszédablak"
+msgstr "Helybeállítás párbeszédablak"
 
 #: src/Geoclue2Dialog.vala:30
 #, c-format
 msgid "Allow %s to Access This Device's Location?"
-msgstr ""
+msgstr "Engedélyezi, hogy %s hozzáférjen az eszköz helyzetéhez?"
 
 #: src/Geoclue2Dialog.vala:62
 msgid "Deny"
