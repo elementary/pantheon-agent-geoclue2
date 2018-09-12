@@ -33,5 +33,7 @@ conf_data = configuration_data()
 conf_data.set('EXEC_NAME', meson.project_name())
 conf_data.set('EXECDIR', install_path)
 
+meson.add_install_script('meson/post_install.py', join_paths(get_option('prefix'), get_option('datadir')))
+
 subdir('data')
 subdir('po')
