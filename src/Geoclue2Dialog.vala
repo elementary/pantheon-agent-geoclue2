@@ -27,7 +27,7 @@ namespace Ag.Widgets {
 
             set_keep_above (true);
 
-            var heading = new Gtk.Label (_("Allow %s to Access This Device's Location?".printf (app_name)));
+            var heading = new Gtk.Label (_("Allow %s to Access This Device's Location?").printf (app_name));
             heading.get_style_context ().add_class ("primary");
             heading.max_width_chars = 50;
             heading.wrap = true;
