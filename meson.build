@@ -18,7 +18,6 @@ executable(
     'src/Interfaces.vala',
     'src/Utils.vala',
     dependencies: [
-        dependency('dbus-glib-1'),
         dependency('gio-unix-2.0'),
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
