@@ -22,7 +22,7 @@
 namespace Ag.Widgets {
     public class Geoclue2Dialog : Gtk.Dialog {
 
-        public Geoclue2Dialog (string message, string app_name, string icon_name) {
+        public Geoclue2Dialog (string message, string app_name, GLib.Icon? icon) {
             Object (title: _("Location Dialog"), window_position: Gtk.WindowPosition.CENTER, resizable: false, deletable: false, skip_taskbar_hint: true);
 
             set_keep_above (true);
@@ -45,8 +45,8 @@ namespace Ag.Widgets {
             overlay.valign = Gtk.Align.START;
             overlay.add (image);
 
-            if (icon_name != "" && Gtk.IconTheme.get_default ().has_icon (icon_name)) {
-                var overlay_image = new Gtk.Image.from_icon_name (icon_name, Gtk.IconSize.LARGE_TOOLBAR);
+            if (icon != null) {
+                var overlay_image = new Gtk.Image.from_gicon (icon, Gtk.IconSize.LARGE_TOOLBAR);
                 overlay_image.halign = overlay_image.valign = Gtk.Align.END;
                 overlay.add_overlay (overlay_image);
             }

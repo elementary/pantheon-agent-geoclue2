@@ -23,18 +23,19 @@ namespace Ag.Utils {
     public const string GEOCLUE2_MANAGER_IFACE = "org.freedesktop.GeoClue2";
     public const string GEOCLUE2_MANAGER_PATH = "/org/freedesktop/GeoClue2/Manager";
 
-    public async void register_with_geoclue (string app_id) {    
+    public async void register_with_geoclue () {
         GeoClue2Manager? manager = yield get_geoclue_manager ();
         if (manager != null) {
             try {
-                yield manager.add_agent (app_id);
+                var app = GLib.Application.get_default ();
+                yield manager.add_agent (app.application_id);
             } catch (Error e) {
                 warning ("Unable to register with GeoClue2: %s", e.message);
             }
         }
     }
 
-    public async GeoClue2Client? get_geoclue2_client (string app_id) {
+    public async GeoClue2Client? get_geoclue2_client () {
         GeoClue2Manager? manager = yield get_geoclue_manager ();
         if (manager == null) {
             return null;
@@ -51,7 +52,8 @@ namespace Ag.Utils {
         }
 
         if (client != null) {
-            client.desktop_id = app_id;
+            var app = GLib.Application.get_default ();
+            client.desktop_id = app.application_id;
         }
 
         return client;
