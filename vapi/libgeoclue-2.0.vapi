@@ -20,7 +20,7 @@
  */
 
 namespace GeoClue2 {
-    [CCode (cname = "GClueAccuracyLevel", cprefix = "GCLUE_ACCURACY_LEVEL_", cheader_filename = "gclue-enums.h" )]
+    [CCode (cname = "GClueAccuracyLevel", cprefix = "GCLUE_ACCURACY_LEVEL_", cheader_filename = "gclue-enums.h", type_signature = "u")]
     public enum AccuracyLevel {
         NONE,
         COUNTRY,

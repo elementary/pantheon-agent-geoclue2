@@ -22,24 +22,24 @@
 namespace Ag {
     [DBus (name = "org.freedesktop.GeoClue2.Manager")]
     public interface GeoClue2Manager : Object {
-        public abstract async void add_agent (string id) throws IOError;
-        public abstract async ObjectPath get_client () throws IOError;
+        public abstract async void add_agent (string id) throws GLib.Error;
+        public abstract async ObjectPath get_client () throws GLib.Error;
     }
 
     [DBus (name = "org.freedesktop.GeoClue2.Agent")]
     public interface GeoClue2Agent : GLib.Object {
         [DBus (name = "AuthorizeApp")]
-        public abstract async void authorize_app (string desktop_id, uint req_accuracy_level, out bool authorized, out uint allowed_accuracy_level) throws DBusError, IOError;
+        public abstract async void authorize_app (string desktop_id, GeoClue2.AccuracyLevel req_accuracy_level, out bool authorized, out GeoClue2.AccuracyLevel allowed_accuracy_level) throws GLib.Error;
         [DBus (name ="MaxAccuracyLevel")]
-        public abstract uint max_accuracy_level {  get; }
+        public abstract GeoClue2.AccuracyLevel max_accuracy_level {  get; }
     }
 
     [DBus (name = "org.freedesktop.GeoClue2.Client")]
     public interface GeoClue2Client : GLib.Object {
         [DBus (name = "Start")]
-        public abstract void start () throws IOError;
+        public abstract void start () throws GLib.Error;
         [DBus (name = "Stop")]
-        public abstract void stop () throws IOError;
+        public abstract void stop () throws GLib.Error;
         [DBus (name = "DesktopId")]
         public abstract string desktop_id { owned get; set; }
     }
