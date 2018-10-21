@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 14:27-0700\n"
-"PO-Revision-Date: 2018-03-25 00:09+0000\n"
-"Last-Translator: H. Gerhard. A <henrik.ahlkvist@gmail.com>\n"
+"PO-Revision-Date: 2018-10-21 09:54+0000\n"
+"Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/desktop/"
 "pantheon-agent-geoclue2/sv/>\n"
 "Language: sv\n"
@@ -12,24 +12,24 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:33+0000\n"
 
 #: src/Agent.vala:153
 msgid "the current country"
-msgstr "nuvarande land"
+msgstr "det nuvarande landet"
 
 #: src/Agent.vala:156
 msgid "the nearest city or town"
-msgstr "närmsta stad eller ort"
+msgstr "den närmaste staden eller orten"
 
 #: src/Agent.vala:159
 msgid "the nearest neighborhood"
-msgstr "närmsta grannskap"
+msgstr "det närmaste grannskapet"
 
 #: src/Agent.vala:162
 msgid "the nearest street"
-msgstr "närmsta gata"
+msgstr "den närmaste gatan"
 
 #: src/Agent.vala:165
 msgid "your exact location"
@@ -45,15 +45,17 @@ msgid ""
 "%s will be able to detect %s. Permissions can be changed in <a "
 "href='settings://security/privacy/location'>Location Settings…</a>"
 msgstr ""
+"%s kommer kunna detektera %s. Behörigheter kan ändras i <a href='settings://"
+"security/privacy/location'>Platsinställningarna...</a>"
 
 #: src/Geoclue2Dialog.vala:26
 msgid "Location Dialog"
-msgstr ""
+msgstr "Platsdialog"
 
 #: src/Geoclue2Dialog.vala:30
 #, c-format
 msgid "Allow %s to Access This Device's Location?"
-msgstr ""
+msgstr "Tillåt %s att få åtkomst till den här enhetens plats?"
 
 #: src/Geoclue2Dialog.vala:62
 msgid "Deny"
