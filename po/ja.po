@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 14:27-0700\n"
-"PO-Revision-Date: 2018-08-20 00:06+0000\n"
+"PO-Revision-Date: 2018-11-04 00:03+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/desktop/"
 "pantheon-agent-geoclue2/ja/>\n"
@@ -29,7 +29,7 @@ msgstr "最寄りの町"
 
 #: src/Agent.vala:162
 msgid "the nearest street"
-msgstr "最寄りの町"
+msgstr "最寄りの番地"
 
 #: src/Agent.vala:165
 msgid "your exact location"
