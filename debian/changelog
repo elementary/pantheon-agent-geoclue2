@@ -1,3 +1,9 @@
+pantheon-agent-geoclue2 (1.0.1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Wed, 19 Dec 2018 03:38:08 -0600
+
 pantheon-agent-geoclue2 (1.0) bionic; urgency=medium
 
   * New upstream release.
