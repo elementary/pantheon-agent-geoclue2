@@ -18,6 +18,14 @@ i18n.merge_file(
     install_dir: join_paths(get_option('datadir'), 'applications')
 )
 
+i18n.merge_file(
+    input: 'io.elementary.desktop.agent-geoclue2.appdata.xml.in',
+    output: '@BASENAME@',
+    install: true,
+    install_dir: join_paths(get_option('datadir'), 'metainfo'),
+    po_dir: join_paths(meson.source_root (), 'po', 'extra')
+)
+
 # Daemon File
 configure_file(
     input: 'io.elementary.desktop.agent-geoclue2-daemon.desktop.in',
