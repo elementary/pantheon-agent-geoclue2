@@ -11,8 +11,13 @@
     <p>The location services agent appears whenever an application wants to request permission to use location services. From this dialog, you can see what level of access the application is requesting and either approve or deny its access to your current location.</p>
   </description>
   <provides>
-      <binary>pantheon-agent-geoclue2</binary>
+    <binary>pantheon-agent-geoclue2</binary>
   </provides>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/pantheon-agent-geoclue2/master/data/screenshot.png</image>
+    </screenshot>
+  </screenshots>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">none</content_attribute>
     <content_attribute id="violence-fantasy">none</content_attribute>
