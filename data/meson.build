@@ -20,7 +20,7 @@ i18n.merge_file(
 
 i18n.merge_file(
     input: 'io.elementary.desktop.agent-geoclue2.appdata.xml.in',
-    output: '@BASENAME@',
+    output: 'io.elementary.desktop.agent-geoclue2.appdata.xml',
     install: true,
     install_dir: join_paths(get_option('datadir'), 'metainfo'),
     po_dir: join_paths(meson.source_root (), 'po', 'extra')
