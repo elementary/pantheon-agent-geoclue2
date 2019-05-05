@@ -1,6 +1,5 @@
 /*-
- * Copyright (c) 2017 elementary LLC.
- * Copyright (C) 2017 David Hewitt <davidmhewitt@gmail.com>   
+ * Copyright (c) 2017-2019 elementary LLC.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -11,7 +10,7 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301  USA
@@ -39,7 +38,6 @@ namespace Ag {
         private GLib.Settings settings;
 
         construct {
-            flags |= GLib.ApplicationFlags.IS_SERVICE;
             application_id = "io.elementary.desktop.agent-geoclue2";
             settings = new GLib.Settings (application_id);
             settings.changed.connect ((key) => {
@@ -47,6 +45,10 @@ namespace Ag {
                     notify_property ("max-accuracy-level");
                 }
             });
+        }
+
+        public override void activate () {
+            hold ();
         }
 
         private void on_name (DBusConnection conn) {
@@ -79,7 +81,7 @@ namespace Ag {
 
             base.dbus_unregister (connection, object_path);
         }
-        
+
         public async void authorize_app (string id, GeoClue2.AccuracyLevel req_accuracy, out bool authorized, out GeoClue2.AccuracyLevel allowed_accuracy) {
             debug ("Request for '%s' at level '%u'", id, req_accuracy);
 
@@ -128,7 +130,7 @@ namespace Ag {
             } else {
                 authorized = false;
             }
-            
+
             dialog.destroy ();
             allowed_accuracy = req_accuracy;
             remember_app (id, authorized, req_accuracy);
