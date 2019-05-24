@@ -8,22 +8,24 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-20 09:00-0800\n"
-"PO-Revision-Date: 2018-10-13 14:28-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2019-05-17 17:02+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
+"geoclue2-agent-extra/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.6.1\n"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:8
 msgid "Location Services Agent"
-msgstr ""
+msgstr "Agente de serviços de localização"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:9
 msgid "Approve or deny access to location services"
-msgstr ""
+msgstr "Aprovar ou negar acesso a serviços de localização"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:11
 msgid ""
@@ -32,15 +34,19 @@ msgid ""
 "level of access the application is requesting and either approve or deny its "
 "access to your current location."
 msgstr ""
+"O agente de serviços de localização aparece sempre que uma aplicação deseja "
+"solicitar permissão para usar os serviços de localização. Nessa caixa de "
+"diálogo, você pode ver o nível de acesso que a aplicação está a solicitar e "
+"aprovar ou negar o seu acesso à sua localização atual."
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:45
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/io.elementary.desktop.agent-geoclue2.desktop.in.in:3
 msgid "Location Dialog"
-msgstr ""
+msgstr "Diálogo de localização"
 
 #: data/io.elementary.desktop.agent-geoclue2.desktop.in.in:5
 msgid "find-location"
-msgstr ""
+msgstr "procurar-localização"

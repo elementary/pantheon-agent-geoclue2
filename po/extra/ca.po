@@ -8,21 +8,24 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-20 09:00-0800\n"
-"PO-Revision-Date: 2018-10-13 14:28-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2019-05-17 17:02+0000\n"
+"Last-Translator: David M <rbndavid@gmail.com>\n"
+"Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/"
+"geoclue2-agent-extra/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.6.1\n"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:8
 msgid "Location Services Agent"
-msgstr ""
+msgstr "Agent dels serveis d'ubicació"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:9
 msgid "Approve or deny access to location services"
-msgstr ""
+msgstr "Aproveu o denegueu l'accés als serveis d'ubicació."
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:11
 msgid ""
@@ -31,15 +34,19 @@ msgid ""
 "level of access the application is requesting and either approve or deny its "
 "access to your current location."
 msgstr ""
+"L'agent dels serveis d'ubicació apareix quan una aplicació vol demanar "
+"permís per usar serveis d'ubicació. Des d’aquest diàleg, podeu veure quin "
+"nivell d’accés sol·licita l’aplicació i aprovar-ne o denegar-ne l'accés a la "
+"vostra ubicació actual."
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:45
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/io.elementary.desktop.agent-geoclue2.desktop.in.in:3
 msgid "Location Dialog"
-msgstr ""
+msgstr "Diàleg de la ubicació"
 
 #: data/io.elementary.desktop.agent-geoclue2.desktop.in.in:5
 msgid "find-location"
-msgstr ""
+msgstr "troba-ubicació"

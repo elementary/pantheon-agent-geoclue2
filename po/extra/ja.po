@@ -8,23 +8,25 @@ msgstr ""
 "Project-Id-Version: pantheon-agent-geoclue2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-20 09:00-0800\n"
-"PO-Revision-Date: 2017-02-26 10:38+0000\n"
-"Last-Translator: Ryo Nakano <Unknown>\n"
-"Language-Team: Japanese <ja@li.org>\n"
+"PO-Revision-Date: 2019-05-17 17:02+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
+"Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
+"geoclue2-agent-extra/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.6.1\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:33+0000\n"
-"X-Generator: Launchpad (build 18329)\n"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:8
 msgid "Location Services Agent"
-msgstr ""
+msgstr "位置情報サービス エージェント"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:9
 msgid "Approve or deny access to location services"
-msgstr ""
+msgstr "位置情報サービスへのアクセスを許可あるいは拒否します"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:11
 msgid ""
@@ -33,14 +35,16 @@ msgid ""
 "level of access the application is requesting and either approve or deny its "
 "access to your current location."
 msgstr ""
+"アプリケーションが位置情報サービスの使用許可を要求する際に、位置情報サービス エージェントが表示されます。このダイアログでは、アプリケーションの要求する位"
+"置情報の精度を確認したり、アプリケーションの現在地へのアクセスを許可あるいは拒否したりできます。"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:45
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/io.elementary.desktop.agent-geoclue2.desktop.in.in:3
 msgid "Location Dialog"
-msgstr "地域ダイアログ"
+msgstr "位置情報ダイアログ"
 
 #: data/io.elementary.desktop.agent-geoclue2.desktop.in.in:5
 msgid "find-location"

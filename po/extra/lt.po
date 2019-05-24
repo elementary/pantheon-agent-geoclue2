@@ -8,23 +8,27 @@ msgstr ""
 "Project-Id-Version: pantheon-agent-geoclue2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-20 09:00-0800\n"
-"PO-Revision-Date: 2017-02-26 20:24+0000\n"
+"PO-Revision-Date: 2019-05-17 17:02+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
-"Language-Team: Lithuanian <lt@li.org>\n"
+"Language-Team: Lithuanian <https://l10n.elementary.io/projects/desktop/"
+"geoclue2-agent-extra/lt/>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > "
+"19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? "
+"1 : 2);\n"
+"X-Generator: Weblate 3.6.1\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:33+0000\n"
-"X-Generator: Launchpad (build 18329)\n"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:8
 msgid "Location Services Agent"
-msgstr ""
+msgstr "Buvimo vietos tarnybų agentas"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:9
 msgid "Approve or deny access to location services"
-msgstr ""
+msgstr "Leisti ar drausti prieigą prie buvimo vietos tarnybų"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:11
 msgid ""
@@ -33,10 +37,14 @@ msgid ""
 "level of access the application is requesting and either approve or deny its "
 "access to your current location."
 msgstr ""
+"Buvimo vietos tarnybų agentas atsiranda kiekvieną kartą, kai programa "
+"užklausia leidimo naudoti buvimo vietos tarnybas. Šiame dialoge galite "
+"matyti kokio lygio prieigos programa prašo ir, galite leisti arba drausti "
+"programai prieigą prie jūsų dabartinės buvimo vietos."
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:45
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/io.elementary.desktop.agent-geoclue2.desktop.in.in:3
 msgid "Location Dialog"
@@ -44,4 +52,4 @@ msgstr "Buvimo vietos dialogas"
 
 #: data/io.elementary.desktop.agent-geoclue2.desktop.in.in:5
 msgid "find-location"
-msgstr ""
+msgstr "find-location"
