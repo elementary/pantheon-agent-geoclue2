@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 14:27-0700\n"
+"POT-Creation-Date: 2019-06-26 22:43+0200\n"
 "PO-Revision-Date: 2017-06-03 15:58+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -15,31 +15,31 @@ msgstr ""
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:33+0000\n"
 
-#: src/Agent.vala:153
+#: src/Agent.vala:152
 msgid "the current country"
 msgstr "o país atual"
 
-#: src/Agent.vala:156
+#: src/Agent.vala:155
 msgid "the nearest city or town"
 msgstr "a cidade mais próxima"
 
-#: src/Agent.vala:159
+#: src/Agent.vala:158
 msgid "the nearest neighborhood"
 msgstr "a vizinhança mais próxima"
 
-#: src/Agent.vala:162
+#: src/Agent.vala:161
 msgid "the nearest street"
 msgstr "a rua mais próxima"
 
-#: src/Agent.vala:165
+#: src/Agent.vala:164
 msgid "your exact location"
 msgstr "sua localização exata"
 
-#: src/Agent.vala:168
+#: src/Agent.vala:167
 msgid "your location"
 msgstr "sua localização"
 
-#: src/Agent.vala:172
+#: src/Agent.vala:171
 #, c-format
 msgid ""
 "%s will be able to detect %s. Permissions can be changed in <a "

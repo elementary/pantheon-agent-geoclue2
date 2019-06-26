@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 14:27-0700\n"
+"POT-Creation-Date: 2019-06-26 22:43+0200\n"
 "PO-Revision-Date: 2017-06-17 09:28+0000\n"
 "Last-Translator: Rajeev Kumar <irajeevankumar@gmail.com>\n"
 "Language-Team: Tamil <https://l10n.elementary.io/projects/desktop/pantheon-"
@@ -15,32 +15,32 @@ msgstr ""
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:33+0000\n"
 
-#: src/Agent.vala:153
+#: src/Agent.vala:152
 msgid "the current country"
 msgstr "தற்போதைய நாடு"
 
-#: src/Agent.vala:156
+#: src/Agent.vala:155
 #, fuzzy
 msgid "the nearest city or town"
 msgstr "அருகிலுள்ள நகரம் அல்லது தாலுக்கா"
 
-#: src/Agent.vala:159
+#: src/Agent.vala:158
 msgid "the nearest neighborhood"
 msgstr "மிக அருகில் இருக்கும் சுற்றுப்பறம்"
 
-#: src/Agent.vala:162
+#: src/Agent.vala:161
 msgid "the nearest street"
 msgstr "அருகில் உள்ள தெரு"
 
-#: src/Agent.vala:165
+#: src/Agent.vala:164
 msgid "your exact location"
 msgstr "உங்கள் சரியான இடம்"
 
-#: src/Agent.vala:168
+#: src/Agent.vala:167
 msgid "your location"
 msgstr "உங்களுடைய இருப்பிடம்"
 
-#: src/Agent.vala:172
+#: src/Agent.vala:171
 #, c-format
 msgid ""
 "%s will be able to detect %s. Permissions can be changed in <a "

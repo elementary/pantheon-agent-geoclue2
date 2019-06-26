@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 14:27-0700\n"
+"POT-Creation-Date: 2019-06-26 22:43+0200\n"
 "PO-Revision-Date: 2018-05-26 08:04+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/desktop/"
@@ -13,31 +13,31 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
 
-#: src/Agent.vala:153
+#: src/Agent.vala:152
 msgid "the current country"
 msgstr "țara actuală"
 
-#: src/Agent.vala:156
+#: src/Agent.vala:155
 msgid "the nearest city or town"
 msgstr "cel mai apropiat oraș sau județ"
 
-#: src/Agent.vala:159
+#: src/Agent.vala:158
 msgid "the nearest neighborhood"
 msgstr "cel mai apropiat cartier"
 
-#: src/Agent.vala:162
+#: src/Agent.vala:161
 msgid "the nearest street"
 msgstr "cea mai apropiată stradă"
 
-#: src/Agent.vala:165
+#: src/Agent.vala:164
 msgid "your exact location"
 msgstr "locația exactă"
 
-#: src/Agent.vala:168
+#: src/Agent.vala:167
 msgid "your location"
 msgstr "locația ta"
 
-#: src/Agent.vala:172
+#: src/Agent.vala:171
 #, c-format
 msgid ""
 "%s will be able to detect %s. Permissions can be changed in <a "

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 14:27-0700\n"
+"POT-Creation-Date: 2019-06-26 22:43+0200\n"
 "PO-Revision-Date: 2017-12-15 00:10+0000\n"
 "Last-Translator: Liffindra Angga Zaaldian <liffindra.zaaldian@icloud.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/desktop/"
@@ -15,31 +15,31 @@ msgstr ""
 "X-Generator: Weblate 2.17.1\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:33+0000\n"
 
-#: src/Agent.vala:153
+#: src/Agent.vala:152
 msgid "the current country"
 msgstr "negara saat ini"
 
-#: src/Agent.vala:156
+#: src/Agent.vala:155
 msgid "the nearest city or town"
 msgstr "kota terdekat"
 
-#: src/Agent.vala:159
+#: src/Agent.vala:158
 msgid "the nearest neighborhood"
 msgstr "lingkungan terdekat"
 
-#: src/Agent.vala:162
+#: src/Agent.vala:161
 msgid "the nearest street"
 msgstr "jalan terdekat"
 
-#: src/Agent.vala:165
+#: src/Agent.vala:164
 msgid "your exact location"
 msgstr "lokasi yang tepat"
 
-#: src/Agent.vala:168
+#: src/Agent.vala:167
 msgid "your location"
 msgstr "lokasi Anda"
 
-#: src/Agent.vala:172
+#: src/Agent.vala:171
 #, c-format
 msgid ""
 "%s will be able to detect %s. Permissions can be changed in <a "

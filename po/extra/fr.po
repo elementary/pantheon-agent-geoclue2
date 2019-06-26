@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-20 09:00-0800\n"
+"POT-Creation-Date: 2019-06-26 22:43+0200\n"
 "PO-Revision-Date: 2019-05-30 11:03+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/desktop/"
-"geoclue2-agent-extra/fr/>\n"
+"Language-Team: French <https://l10n.elementary.io/projects/desktop/geoclue2-"
+"agent-extra/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,7 +39,7 @@ msgstr ""
 "Dans cette boîte de dialogue, vous pouvez voir le niveau d'accès demandé par "
 "l'application et accepter ou refuser son accès à votre emplacement actuel."
 
-#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:45
+#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:50
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
