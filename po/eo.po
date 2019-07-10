@@ -3,39 +3,41 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:43+0200\n"
-"PO-Revision-Date: 2017-02-19 14:25+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-07-11 22:46+0000\n"
+"Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
+"Language-Team: Esperanto <https://l10n.elementary.io/projects/desktop/"
+"pantheon-agent-geoclue2/eo/>\n"
+"Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.6.1\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:33+0000\n"
-"X-Generator: Launchpad (build 18329)\n"
 
 #: src/Agent.vala:152
 msgid "the current country"
-msgstr ""
+msgstr "aktuala lando"
 
 #: src/Agent.vala:155
 msgid "the nearest city or town"
-msgstr ""
+msgstr "plej proksima urbo"
 
 #: src/Agent.vala:158
 msgid "the nearest neighborhood"
-msgstr ""
+msgstr "plej proksima najbaraĵo"
 
 #: src/Agent.vala:161
 msgid "the nearest street"
-msgstr ""
+msgstr "plej proksima strato"
 
 #: src/Agent.vala:164
 msgid "your exact location"
-msgstr ""
+msgstr "via ekzakta loko"
 
 #: src/Agent.vala:167
 msgid "your location"
-msgstr ""
+msgstr "via loko"
 
 #: src/Agent.vala:171
 #, c-format
@@ -43,20 +45,22 @@ msgid ""
 "%s will be able to detect %s. Permissions can be changed in <a "
 "href='settings://security/privacy/location'>Location Settings…</a>"
 msgstr ""
+"Eblos al %s detekti %s. Permesoj ŝanĝiĝos en <a href='settings://security/"
+"privacy/location'>Lokigaj agordoj…</a>"
 
 #: src/Geoclue2Dialog.vala:26
 msgid "Location Dialog"
-msgstr ""
+msgstr "Lokiga dialogo"
 
 #: src/Geoclue2Dialog.vala:30
 #, c-format
 msgid "Allow %s to Access This Device's Location?"
-msgstr ""
+msgstr "Ĉu permesi al %s akiri ĉi aparatan lokon?"
 
 #: src/Geoclue2Dialog.vala:62
 msgid "Deny"
-msgstr ""
+msgstr "Rifuzi"
 
 #: src/Geoclue2Dialog.vala:63
 msgid "Allow"
-msgstr ""
+msgstr "Permesi"
