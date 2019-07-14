@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:43+0200\n"
-"PO-Revision-Date: 2019-07-11 22:46+0000\n"
+"PO-Revision-Date: 2019-07-16 20:12+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/desktop/"
 "geoclue2-agent-extra/eo/>\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.7.1\n"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:8
 msgid "Location Services Agent"
-msgstr "Peranto de lokigaj servoj"
+msgstr "Peranto de situaj servoj"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:9
 msgid "Approve or deny access to location services"
-msgstr "Aprobi aŭ malpermesi aliron al lokigaj servoj"
+msgstr "Aprobi aŭ malpermesi aliron al situaj servoj"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:11
 msgid ""
@@ -34,10 +34,9 @@ msgid ""
 "level of access the application is requesting and either approve or deny its "
 "access to your current location."
 msgstr ""
-"La peranto de lokigaj servoj aperas kiam aplikaĵo petas permeson uzi "
-"lokigajn servojn. Per la dialogo, eblas informiĝi pri la eco de la aliro "
-"petata de la aplikaĵo, kaj ĉu aprobi aŭ malpermesi akiradon de la nunaj "
-"lokaj datumoj."
+"La peranto de situaj servoj aperas kiam aplikaĵo petas permeson uzi situajn "
+"servojn. Per la dialogo, eblas informiĝi pri la eco de la aliro petata de la "
+"aplikaĵo, kaj ĉu aprobi aŭ malpermesi akiradon de la nunaj situaj datumoj."
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:50
 msgid "elementary, Inc."
