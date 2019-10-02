@@ -70,5 +70,5 @@ namespace Ag.Utils {
         }
 
         return instance;
-    }    
+    }
 }
