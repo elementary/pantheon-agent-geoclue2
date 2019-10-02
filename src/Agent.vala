@@ -58,7 +58,7 @@ namespace Ag {
                     bus_registered = false;
                 }
 
-                debug ("Adding agent...");
+                debug ("Adding agent…");
                 object_id = conn.register_object ("/org/freedesktop/GeoClue2/Agent", (GeoClue2Agent)this);
                 bus_registered = true;
                 Utils.register_with_geoclue.begin ();
@@ -111,7 +111,7 @@ namespace Ag {
             string accuracy_string = accuracy_to_string (app_name, req_accuracy);
 
             client = yield Utils.get_geoclue2_client ();
-            debug ("Starting client...");
+            debug ("Starting client…");
             if (client != null) {
                 try {
                     client.start ();
@@ -135,7 +135,7 @@ namespace Ag {
             allowed_accuracy = req_accuracy;
             remember_app (id, authorized, req_accuracy);
 
-            debug ("Stopping client...");
+            debug ("Stopping client…");
             if (client != null) {
                 try {
                     client.stop ();

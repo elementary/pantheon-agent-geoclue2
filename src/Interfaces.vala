@@ -31,7 +31,7 @@ namespace Ag {
         [DBus (name = "AuthorizeApp")]
         public abstract async void authorize_app (string desktop_id, GeoClue2.AccuracyLevel req_accuracy_level, out bool authorized, out GeoClue2.AccuracyLevel allowed_accuracy_level) throws GLib.Error;
         [DBus (name ="MaxAccuracyLevel")]
-        public abstract GeoClue2.AccuracyLevel max_accuracy_level {  get; }
+        public abstract GeoClue2.AccuracyLevel max_accuracy_level { get; }
     }
 
     [DBus (name = "org.freedesktop.GeoClue2.Client")]
