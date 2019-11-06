@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:43+0200\n"
+"POT-Creation-Date: 2019-11-06 18:50+0000\n"
 "PO-Revision-Date: 2019-05-20 05:14+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -39,7 +39,11 @@ msgstr ""
 "diálogo, você pode ver o nível de acesso que a aplicação está a solicitar e "
 "aprovar ou negar o seu acesso à sua localização atual."
 
-#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:50
+#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:17
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:59
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

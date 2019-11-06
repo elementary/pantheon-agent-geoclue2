@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-geoclue2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:43+0200\n"
+"POT-Creation-Date: 2019-11-06 18:50+0000\n"
 "PO-Revision-Date: 2019-06-21 22:26+0000\n"
 "Last-Translator: Veli-Pekka Samuli Finnilä <vpf@tuta.io>\n"
-"Language-Team: Finnish <https://l10n.elementary.io/projects/desktop/"
-"geoclue2-agent-extra/fi/>\n"
+"Language-Team: Finnish <https://l10n.elementary.io/projects/desktop/geoclue2-"
+"agent-extra/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,7 +40,11 @@ msgstr ""
 "pääsyä sovellus on pyytämässä. Voit sallia tai kieltää sovellukselta "
 "sijaintipalveluiden käytön."
 
-#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:50
+#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:17
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:59
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

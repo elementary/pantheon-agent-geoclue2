@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-geoclue2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:43+0200\n"
+"POT-Creation-Date: 2019-11-06 18:50+0000\n"
 "PO-Revision-Date: 2019-11-01 23:24+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
@@ -40,7 +40,11 @@ msgstr ""
 "置情報の精度を確認したり、アプリケーションの現在地へのアクセスを許可あるいは"
 "拒否したりできます。"
 
-#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:50
+#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:17
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:59
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
