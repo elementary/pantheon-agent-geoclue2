@@ -1,3 +1,18 @@
+pantheon-agent-geoclue2 (1.0.3) bionic; urgency=medium
+
+  * Release 1.0.3 (#37)
+  * Travis: Downgrade Node to 10
+  * Update translation template
+  * Appdata: Add 1.0.3 release data
+  * Add Release to Actions
+  * Add Gettext Updates to Actions
+  * Add Lint to CI (#35)
+  * Fix code style issues (#36)
+  * Delete FUNDING.yml
+  * Delete CODE_OF_CONDUCT.md
+
+ -- David Hewitt <davidmhewitt@gmail.com>  Fri, 15 Nov 2019 21:58:00 +0000
+
 pantheon-agent-geoclue2 (1.0.2) bionic; urgency=medium
 
   * New upstream release.
