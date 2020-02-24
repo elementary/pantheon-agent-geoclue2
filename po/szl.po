@@ -2,39 +2,41 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 18:50+0000\n"
-"PO-Revision-Date: 2019-06-26 18:53+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-02-25 22:08+0000\n"
+"Last-Translator: gkkulik <g.kulik@o2.pl>\n"
+"Language-Team: Silesian <https://l10n.elementary.io/projects/desktop/"
+"pantheon-agent-geoclue2/szl/>\n"
 "Language: szl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: src/Agent.vala:152
 msgid "the current country"
-msgstr ""
+msgstr "teroźny kroj"
 
 #: src/Agent.vala:155
 msgid "the nearest city or town"
-msgstr ""
+msgstr "nojbliższe miasto"
 
 #: src/Agent.vala:158
 msgid "the nearest neighborhood"
-msgstr ""
+msgstr "nojbliższe ôsiedle"
 
 #: src/Agent.vala:161
 msgid "the nearest street"
-msgstr ""
+msgstr "nojbliższo ulica"
 
 #: src/Agent.vala:164
 msgid "your exact location"
-msgstr ""
+msgstr "twoja akuratno lokacyjo"
 
 #: src/Agent.vala:167
 msgid "your location"
-msgstr ""
+msgstr "twoja lokacyjo"
 
 #: src/Agent.vala:171
 #, c-format
@@ -42,20 +44,22 @@ msgid ""
 "%s will be able to detect %s. Permissions can be changed in <a "
 "href='settings://security/privacy/location'>Location Settings…</a>"
 msgstr ""
+"%s poradzi wykryć %s. Prawa mogōm być umiyniōne we <a href='settings://"
+"security/privacy/location'>Sztelōnkach lokalizacyje…</a>"
 
 #: src/Geoclue2Dialog.vala:26
 msgid "Location Dialog"
-msgstr ""
+msgstr "Ôkno lokalizacyje"
 
 #: src/Geoclue2Dialog.vala:30
 #, c-format
 msgid "Allow %s to Access This Device's Location?"
-msgstr ""
+msgstr "Dać programowi „%s” dostymp do położynio masziny?"
 
 #: src/Geoclue2Dialog.vala:62
 msgid "Deny"
-msgstr ""
+msgstr "Ôdkoż"
 
 #: src/Geoclue2Dialog.vala:63
 msgid "Allow"
-msgstr ""
+msgstr "Przizwōl"
