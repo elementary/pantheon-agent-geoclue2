@@ -1,5 +1,5 @@
 # Location Services Agent
-[![l10n](https://l10n.elementary.io/widgets/desktop/pantheon-agent-geoclue2/svg-badge.svg)](https://l10n.elementary.io/projects/desktop/pantheon-agent-geoclue2)
+[![Translation status](https://l10n.elementary.io/widgets/desktop/-/pantheon-agent-geoclue2/svg-badge.svg)](https://l10n.elementary.io/engage/desktop/?utm_source=widget)
 
 The location services agent appears whenever an application wants to request permission to use location services. From this dialog, you can see what level of access the application is requesting and either approve or deny its access to your current location.
 
