@@ -20,16 +20,7 @@
 
 namespace Ag {
     public class Agent : Gtk.Application, GeoClue2Agent {
-        public GeoClue2.AccuracyLevel max_accuracy_level {
-            get {
-                bool enabled = settings.get_value ("location-enabled").get_boolean ();
-                if (enabled) {
-                    return GeoClue2.AccuracyLevel.EXACT;
-                } else {
-                    return GeoClue2.AccuracyLevel.NONE;
-                }
-            }
-        }
+        public GeoClue2.AccuracyLevel max_accuracy_level { get; private set; default = GeoClue2.AccuracyLevel.NONE; }
 
         private uint object_id;
         private bool bus_registered = false;
@@ -40,11 +31,20 @@ namespace Ag {
         construct {
             application_id = "io.elementary.desktop.agent-geoclue2";
             settings = new GLib.Settings (application_id);
-            settings.changed.connect ((key) => {
-                if (key == "location-enabled") {
-                    notify_property ("max-accuracy-level");
-                }
-            });
+            settings.bind_with_mapping (
+                "location-enabled",
+                this,
+                "max-accuracy-level",
+                GLib.SettingsBindFlags.GET,
+                (val, variant, data) => {
+                  val.set_enum (variant.get_boolean () ? GeoClue2.AccuracyLevel.EXACT : GeoClue2.AccuracyLevel.NONE);
+                  return true;
+                },
+                (val, expected_type, data) => {
+                  return new Variant.boolean (val.get_enum () == GeoClue2.AccuracyLevel.EXACT);
+                },
+                null, null
+            );
         }
 
         public override void activate () {
