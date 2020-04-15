@@ -1,7 +1,7 @@
 project(
     'pantheon-agent-geoclue2',
     'vala', 'c',
-    version: '1.0.3'
+    version: '1.0.4'
 )
 
 install_path = join_paths(get_option('prefix'), get_option('libexecdir'), 'geoclue2-1-pantheon')
