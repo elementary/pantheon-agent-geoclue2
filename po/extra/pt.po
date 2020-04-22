@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 18:50+0000\n"
-"PO-Revision-Date: 2020-04-09 01:10+0000\n"
+"PO-Revision-Date: 2020-04-23 19:10+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
 "geoclue2-agent-extra/pt/>\n"
@@ -35,13 +35,13 @@ msgid ""
 "access to your current location."
 msgstr ""
 "O agente de serviços de localização aparece sempre que uma aplicação deseja "
-"solicitar permissão para usar os serviços de localização. Nessa caixa de "
-"diálogo, você pode ver o nível de acesso que a aplicação está a solicitar e "
+"solicitar permissão para usar os serviços de localização. Nesta caixa de "
+"diálogo, pode ver o nível de acesso que a aplicação está a solicitar e "
 "aprovar ou negar o seu acesso à sua localização atual."
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:17
 msgid "Updated translations"
-msgstr "Traduções actualizadas"
+msgstr "Traduções atualizadas"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:59
 msgid "elementary, Inc."
@@ -49,7 +49,7 @@ msgstr "elementary, Inc."
 
 #: data/io.elementary.desktop.agent-geoclue2.desktop.in.in:3
 msgid "Location Dialog"
-msgstr "Diálogo de localização"
+msgstr "Caixa de diálogo de localização"
 
 #: data/io.elementary.desktop.agent-geoclue2.desktop.in.in:5
 msgid "find-location"
