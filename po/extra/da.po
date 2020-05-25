@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 18:50+0000\n"
-"PO-Revision-Date: 2020-05-25 19:11+0000\n"
+"PO-Revision-Date: 2020-05-26 20:11+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/desktop/"
 "geoclue2-agent-extra/da/>\n"
@@ -21,11 +21,11 @@ msgstr ""
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:8
 msgid "Location Services Agent"
-msgstr ""
+msgstr "Lokations Service Agent"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:9
 msgid "Approve or deny access to location services"
-msgstr ""
+msgstr "Bekræft eller nægt adgang til lokationstjenester"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:11
 msgid ""
@@ -34,6 +34,10 @@ msgid ""
 "level of access the application is requesting and either approve or deny its "
 "access to your current location."
 msgstr ""
+"Agenten til lokalitets tjenesterne vises, når en applikation ønsker at "
+"anmode om tilladelse til at bruge lokationstjenester. Fra denne dialog kan "
+"du se, hvilket adgangsniveau applikationen anmoder om, og enten godkende "
+"eller afvise dens adgang til din nuværende placering."
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:17
 msgid "Updated translations"
@@ -41,12 +45,12 @@ msgstr "Opdaterede oversættelser"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:59
 msgid "elementary, Inc."
-msgstr "elementary, Inc."
+msgstr "elementary, Incorporated."
 
 #: data/io.elementary.desktop.agent-geoclue2.desktop.in.in:3
 msgid "Location Dialog"
-msgstr ""
+msgstr "Lokations Dialog"
 
 #: data/io.elementary.desktop.agent-geoclue2.desktop.in.in:5
 msgid "find-location"
-msgstr ""
+msgstr "find-lokation"
