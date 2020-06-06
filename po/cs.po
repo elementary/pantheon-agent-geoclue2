@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 18:50+0000\n"
-"PO-Revision-Date: 2020-05-29 13:11+0000\n"
+"PO-Revision-Date: 2020-06-07 11:11+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/desktop/"
 "pantheon-agent-geoclue2/cs/>\n"
@@ -46,7 +46,7 @@ msgid ""
 "href='settings://security/privacy/location'>Location Settings…</a>"
 msgstr ""
 "%s bude moci určit %s. Oprávnění mohou být změněna v <a href='settings://"
-"security/privacy/location'>Nastavení určování…</a>"
+"security/privacy/location'>Nastavení určování polohy…</a>"
 
 #: src/Geoclue2Dialog.vala:26
 msgid "Location Dialog"
@@ -55,7 +55,7 @@ msgstr "Dialog polohy"
 #: src/Geoclue2Dialog.vala:30
 #, c-format
 msgid "Allow %s to Access This Device's Location?"
-msgstr "Povolit %s, přístup k poloze tohoto zařízení?"
+msgstr "Povolit %s přístup k poloze tohoto zařízení?"
 
 #: src/Geoclue2Dialog.vala:62
 msgid "Deny"
