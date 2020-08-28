@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 18:50+0000\n"
-"PO-Revision-Date: 2020-04-05 22:10+0000\n"
+"PO-Revision-Date: 2020-08-29 20:13+0000\n"
 "Last-Translator: Mejans <farga@mejans.fr>\n"
 "Language-Team: Occitan <https://l10n.elementary.io/projects/desktop/"
 "geoclue2-agent-extra/oc/>\n"
@@ -21,11 +21,11 @@ msgstr ""
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:8
 msgid "Location Services Agent"
-msgstr ""
+msgstr "Agent dels servicis de localizacion"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:9
 msgid "Approve or deny access to location services"
-msgstr ""
+msgstr "Acceptar o refusar l’accès als servicis de localizacion"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:11
 msgid ""
