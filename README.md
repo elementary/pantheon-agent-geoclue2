@@ -10,6 +10,7 @@ The location services agent appears whenever an application wants to request per
 You'll need the following dependencies:
 
 * libgeoclue-2-dev
+* libgranite-dev
 * libgtk-3-dev
 * meson
 * valac
