@@ -1,3 +1,12 @@
+pantheon-agent-geoclue2 (1.0.5) bionic; urgency=medium
+
+  * Release 1.0.5 (#53)
+  * Update translation files
+  * Use Github CI (#43)
+  * LINGUAS: Sort and remove en
+
+ -- David Hewitt <davidmhewitt@gmail.com>  Thu, 15 Jul 2021 23:28:33 +0000
+
 pantheon-agent-geoclue2 (1.0.4) bionic; urgency=medium
 
   * Release 1.0.4 (#40)
