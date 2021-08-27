@@ -3,41 +3,41 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 18:50+0000\n"
-"PO-Revision-Date: 2018-06-06 00:08+0000\n"
-"Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
-"Language-Team: Hungarian <https://weblate.elementary.io/projects/desktop/"
+"PO-Revision-Date: 2021-08-27 04:18+0000\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
+"Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
 "pantheon-agent-geoclue2/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:33+0000\n"
 
 #: src/Agent.vala:152
 msgid "the current country"
-msgstr "a jelenlegi ország"
+msgstr "a jelenlegi országot"
 
 #: src/Agent.vala:155
 msgid "the nearest city or town"
-msgstr "a legközelebbi város vagy község"
+msgstr "a legközelebbi várost vagy községet"
 
 #: src/Agent.vala:158
 msgid "the nearest neighborhood"
-msgstr "a legközelebbi városrész"
+msgstr "a legközelebbi városrészt"
 
 #: src/Agent.vala:161
 msgid "the nearest street"
-msgstr "a legközelebbi utca"
+msgstr "a legközelebbi utcát"
 
 #: src/Agent.vala:164
 msgid "your exact location"
-msgstr "az ön pontos tartózkodási helye"
+msgstr "az ön pontos tartózkodási helyét"
 
 #: src/Agent.vala:167
 msgid "your location"
-msgstr "az ön tartózkodási helye"
+msgstr "az ön tartózkodási helyét"
 
 #: src/Agent.vala:171
 #, c-format
