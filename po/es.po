@@ -3,15 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 18:50+0000\n"
-"PO-Revision-Date: 2017-03-07 09:14+0000\n"
-"Last-Translator: Daniel Fore <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-08-27 07:27+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/"
+"pantheon-agent-geoclue2/es/>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-09 06:05+0000\n"
-"X-Generator: Launchpad (build 18330)\n"
 
 #: src/Agent.vala:152
 msgid "the current country"
@@ -44,20 +46,20 @@ msgid ""
 "href='settings://security/privacy/location'>Location Settings…</a>"
 msgstr ""
 "%s será capaz de detectar %s. Los permisos pueden cambiarse in <a "
-"href='settings://security/privacy/location'>Ajustes de ubicación…</a>"
+"href='settings://security/privacy/location'>Configuración de ubicación…</a>"
 
 #: src/Geoclue2Dialog.vala:26
 msgid "Location Dialog"
-msgstr "Diálogo de Ubicación"
+msgstr "Diálogo de ubicación"
 
 #: src/Geoclue2Dialog.vala:30
 #, c-format
 msgid "Allow %s to Access This Device's Location?"
-msgstr "¿Permitir a %s Acceder a la Ubicación de Este Dispositivo?"
+msgstr "¿Quiere permitir que %s acceda a la ubicación de este dispositivo?"
 
 #: src/Geoclue2Dialog.vala:62
 msgid "Deny"
-msgstr "No Permitir"
+msgstr "Denegar"
 
 #: src/Geoclue2Dialog.vala:63
 msgid "Allow"
