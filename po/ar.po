@@ -3,9 +3,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 18:50+0000\n"
-"PO-Revision-Date: 2018-12-01 03:33+0000\n"
-"Last-Translator: Mohelm97 <mohelm97@gmail.com>\n"
-"Language-Team: Arabic <https://weblate.elementary.io/projects/desktop/"
+"PO-Revision-Date: 2021-08-29 20:32+0000\n"
+"Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
+"Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/"
 "pantheon-agent-geoclue2/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
@@ -13,28 +13,28 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:32+0000\n"
 
 #: src/Agent.vala:152
 msgid "the current country"
-msgstr "البلد الحالي"
+msgstr "الدولة الحالية"
 
 #: src/Agent.vala:155
 msgid "the nearest city or town"
-msgstr "اقرب مدينة"
+msgstr "أقرب مدينة أو بلدة"
 
 #: src/Agent.vala:158
 msgid "the nearest neighborhood"
-msgstr "اقرب جار"
+msgstr "أقرب منطقة سكنية"
 
 #: src/Agent.vala:161
 msgid "the nearest street"
-msgstr "اقرب شارع"
+msgstr "أقرب شارع"
 
 #: src/Agent.vala:164
 msgid "your exact location"
-msgstr "موقعك الحالي"
+msgstr "موقعك الحالي الدقيق"
 
 #: src/Agent.vala:167
 msgid "your location"
@@ -46,22 +46,22 @@ msgid ""
 "%s will be able to detect %s. Permissions can be changed in <a "
 "href='settings://security/privacy/location'>Location Settings…</a>"
 msgstr ""
-"%s سوف يكون قادر على تحديد %s. يمكن تغير الصلاحيات من <a href='settings://"
+"سيكون %s قادراً على اكتشاف %s. الصلاحيات يمكن تغييرها في <a href='settings://"
 "security/privacy/location'>إعدادات الموقع...</a>"
 
 #: src/Geoclue2Dialog.vala:26
 msgid "Location Dialog"
-msgstr "موقع النافذة"
+msgstr "رسالة الموقع"
 
 #: src/Geoclue2Dialog.vala:30
 #, c-format
 msgid "Allow %s to Access This Device's Location?"
-msgstr "هل تسمح ل %s بإستخدام موقع الجهاز؟"
+msgstr "هل تسمح ل %s باستخدام موقع الجهاز؟"
 
 #: src/Geoclue2Dialog.vala:62
 msgid "Deny"
-msgstr "رفض"
+msgstr "ارفض"
 
 #: src/Geoclue2Dialog.vala:63
 msgid "Allow"
-msgstr "موافق"
+msgstr "وافق"
