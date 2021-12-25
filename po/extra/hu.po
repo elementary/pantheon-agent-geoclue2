@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 18:50+0000\n"
-"PO-Revision-Date: 2021-09-02 21:46+0000\n"
+"PO-Revision-Date: 2021-12-25 23:12+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
 "geoclue2-agent-extra/hu/>\n"
@@ -21,11 +21,11 @@ msgstr ""
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:8
 msgid "Location Services Agent"
-msgstr ""
+msgstr "Helymeghatározási szolgáltatások ágense"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:9
 msgid "Approve or deny access to location services"
-msgstr ""
+msgstr "A helymeghatározáshoz való hozzáférés engedélyezése vagy megtagadása"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:11
 msgid ""
