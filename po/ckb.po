@@ -3,39 +3,41 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 18:50+0000\n"
-"PO-Revision-Date: 2017-02-19 14:25+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-04-06 20:24+0000\n"
+"Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
+"Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
+"desktop/pantheon-agent-geoclue2/ckb/>\n"
+"Language: ckb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:33+0000\n"
-"X-Generator: Launchpad (build 18329)\n"
 
 #: src/Agent.vala:152
 msgid "the current country"
-msgstr ""
+msgstr "وڵاتی ئێستا"
 
 #: src/Agent.vala:155
 msgid "the nearest city or town"
-msgstr ""
+msgstr "نزیکترین شار یان شارۆچکە"
 
 #: src/Agent.vala:158
 msgid "the nearest neighborhood"
-msgstr ""
+msgstr "نزیکترین گەڕەک"
 
 #: src/Agent.vala:161
 msgid "the nearest street"
-msgstr ""
+msgstr "نزیکترین شەقام"
 
 #: src/Agent.vala:164
 msgid "your exact location"
-msgstr ""
+msgstr "شوێنی ئێستات"
 
 #: src/Agent.vala:167
 msgid "your location"
-msgstr ""
+msgstr "شوێنی تۆ"
 
 #: src/Agent.vala:171
 #, c-format
@@ -43,20 +45,22 @@ msgid ""
 "%s will be able to detect %s. Permissions can be changed in <a "
 "href='settings://security/privacy/location'>Location Settings…</a>"
 msgstr ""
+"%s دەتوانێت بە %s بزانێت. دەکرێت مۆڵەرەکان بگۆڕدرێن لە <a href='settings://"
+"security/privacy/location'>ڕێکخستنەکانی شوێن...</a>"
 
 #: src/Geoclue2Dialog.vala:26
 msgid "Location Dialog"
-msgstr ""
+msgstr "دایەلۆگی شوێن"
 
 #: src/Geoclue2Dialog.vala:30
 #, c-format
 msgid "Allow %s to Access This Device's Location?"
-msgstr ""
+msgstr "ڕێگە بە %s دەدەیت کە شوێنی ئەم ئامێرە بزانێت؟"
 
 #: src/Geoclue2Dialog.vala:62
 msgid "Deny"
-msgstr ""
+msgstr "ڕێگری کردن"
 
 #: src/Geoclue2Dialog.vala:63
 msgid "Allow"
-msgstr ""
+msgstr "ڕێگەدان"
