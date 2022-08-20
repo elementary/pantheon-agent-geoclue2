@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 18:50+0000\n"
+"POT-Creation-Date: 2022-08-20 04:37+0000\n"
 "PO-Revision-Date: 2019-04-06 20:52+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/pantheon-"
@@ -49,19 +49,19 @@ msgstr ""
 "privacy/location'>Konum Ayarları</a> menüsünden değiştirilebilir"
 
 #: src/Geoclue2Dialog.vala:26
-msgid "Location Dialog"
-msgstr "Konum İletişim Kutusu"
-
-#: src/Geoclue2Dialog.vala:30
 #, c-format
 msgid "Allow %s to Access This Device's Location?"
 msgstr ""
 "%s uygulamasının bu cihazın konum bilgisine erişmesine izin verilsin mi?"
 
-#: src/Geoclue2Dialog.vala:62
+#: src/Geoclue2Dialog.vala:30
+msgid "Location Dialog"
+msgstr "Konum İletişim Kutusu"
+
+#: src/Geoclue2Dialog.vala:39
 msgid "Deny"
 msgstr "Reddet"
 
-#: src/Geoclue2Dialog.vala:63
+#: src/Geoclue2Dialog.vala:41
 msgid "Allow"
 msgstr "Kabul Et"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 18:50+0000\n"
+"POT-Creation-Date: 2022-08-20 04:37+0000\n"
 "PO-Revision-Date: 2018-05-26 08:04+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/desktop/"
@@ -47,18 +47,18 @@ msgstr ""
 "href='settings://security/privacy/location'> Setări de locație... </a>"
 
 #: src/Geoclue2Dialog.vala:26
-msgid "Location Dialog"
-msgstr "Dialogul locației"
-
-#: src/Geoclue2Dialog.vala:30
 #, c-format
 msgid "Allow %s to Access This Device's Location?"
 msgstr "Permiteți %s accesarea locației pentru acest dispozitiv?"
 
-#: src/Geoclue2Dialog.vala:62
+#: src/Geoclue2Dialog.vala:30
+msgid "Location Dialog"
+msgstr "Dialogul locației"
+
+#: src/Geoclue2Dialog.vala:39
 msgid "Deny"
 msgstr "Refuză"
 
-#: src/Geoclue2Dialog.vala:63
+#: src/Geoclue2Dialog.vala:41
 msgid "Allow"
 msgstr "Permite"

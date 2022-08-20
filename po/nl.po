@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 18:50+0000\n"
+"POT-Creation-Date: 2022-08-20 04:37+0000\n"
 "PO-Revision-Date: 2017-04-09 17:37+0000\n"
 "Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
 "Language-Team: Dutch <http://weblate.elementary.io/projects/desktop/pantheon-"
@@ -50,18 +50,18 @@ msgstr ""
 "aangepast worden"
 
 #: src/Geoclue2Dialog.vala:26
-msgid "Location Dialog"
-msgstr "Locatiedialoog"
-
-#: src/Geoclue2Dialog.vala:30
 #, c-format
 msgid "Allow %s to Access This Device's Location?"
 msgstr "Geef %s toegang tot de locatie van dit apparaat?"
 
-#: src/Geoclue2Dialog.vala:62
+#: src/Geoclue2Dialog.vala:30
+msgid "Location Dialog"
+msgstr "Locatiedialoog"
+
+#: src/Geoclue2Dialog.vala:39
 msgid "Deny"
 msgstr "Weigeren"
 
-#: src/Geoclue2Dialog.vala:63
+#: src/Geoclue2Dialog.vala:41
 msgid "Allow"
 msgstr "Toestaan"

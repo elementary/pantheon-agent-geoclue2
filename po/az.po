@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 18:50+0000\n"
+"POT-Creation-Date: 2022-08-20 04:37+0000\n"
 "PO-Revision-Date: 2019-09-10 17:22+0000\n"
 "Last-Translator: voogarix <voogarix@gmail.com>\n"
 "Language-Team: Azerbaijani <https://l10n.elementary.io/projects/desktop/"
@@ -49,18 +49,18 @@ msgstr ""
 "location'>Məkan Paranetrləri</a> bölməsində dəyişə bilərsiniz."
 
 #: src/Geoclue2Dialog.vala:26
-msgid "Location Dialog"
-msgstr "Məkan Dialoqu"
-
-#: src/Geoclue2Dialog.vala:30
 #, c-format
 msgid "Allow %s to Access This Device's Location?"
 msgstr "%s -ə Bu Cihazın Yerləşdiyi Məkana icazə verilsin?"
 
-#: src/Geoclue2Dialog.vala:62
+#: src/Geoclue2Dialog.vala:30
+msgid "Location Dialog"
+msgstr "Məkan Dialoqu"
+
+#: src/Geoclue2Dialog.vala:39
 msgid "Deny"
 msgstr "Qadağa et"
 
-#: src/Geoclue2Dialog.vala:63
+#: src/Geoclue2Dialog.vala:41
 msgid "Allow"
 msgstr "İcazə ver"

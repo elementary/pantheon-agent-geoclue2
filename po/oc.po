@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 18:50+0000\n"
+"POT-Creation-Date: 2022-08-20 04:37+0000\n"
 "PO-Revision-Date: 2020-08-29 20:13+0000\n"
 "Last-Translator: Mejans <farga@mejans.fr>\n"
-"Language-Team: Occitan <https://l10n.elementary.io/projects/desktop/"
-"pantheon-agent-geoclue2/oc/>\n"
+"Language-Team: Occitan <https://l10n.elementary.io/projects/desktop/pantheon-"
+"agent-geoclue2/oc/>\n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,18 +47,18 @@ msgid ""
 msgstr ""
 
 #: src/Geoclue2Dialog.vala:26
-msgid "Location Dialog"
-msgstr ""
-
-#: src/Geoclue2Dialog.vala:30
 #, c-format
 msgid "Allow %s to Access This Device's Location?"
 msgstr "Permetre a %s d’accedir a la localizacion d’aqueste periferic ?"
 
-#: src/Geoclue2Dialog.vala:62
+#: src/Geoclue2Dialog.vala:30
+msgid "Location Dialog"
+msgstr ""
+
+#: src/Geoclue2Dialog.vala:39
 msgid "Deny"
 msgstr "Refusar"
 
-#: src/Geoclue2Dialog.vala:63
+#: src/Geoclue2Dialog.vala:41
 msgid "Allow"
 msgstr "Autorizar"

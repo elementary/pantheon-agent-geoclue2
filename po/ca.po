@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 18:50+0000\n"
+"POT-Creation-Date: 2022-08-20 04:37+0000\n"
 "PO-Revision-Date: 2017-04-18 14:44+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/pantheon-"
@@ -49,18 +49,18 @@ msgstr ""
 "security/privacy/location'>Paràmetres de la ubicació…</a>"
 
 #: src/Geoclue2Dialog.vala:26
-msgid "Location Dialog"
-msgstr "Diàleg de la ubicació"
-
-#: src/Geoclue2Dialog.vala:30
 #, c-format
 msgid "Allow %s to Access This Device's Location?"
 msgstr "Voleu permetre que \"%s\" accedeixi a la ubicació d'aquest dispositiu?"
 
-#: src/Geoclue2Dialog.vala:62
+#: src/Geoclue2Dialog.vala:30
+msgid "Location Dialog"
+msgstr "Diàleg de la ubicació"
+
+#: src/Geoclue2Dialog.vala:39
 msgid "Deny"
 msgstr "Denega-li-ho"
 
-#: src/Geoclue2Dialog.vala:63
+#: src/Geoclue2Dialog.vala:41
 msgid "Allow"
 msgstr "Permet-li-ho"

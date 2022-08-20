@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 18:50+0000\n"
+"POT-Creation-Date: 2022-08-20 04:37+0000\n"
 "PO-Revision-Date: 2019-09-22 14:22+0000\n"
 "Last-Translator: Daniel R. <riesp@pm.me>\n"
 "Language-Team: Galician <https://l10n.elementary.io/projects/desktop/"
@@ -49,18 +49,18 @@ msgstr ""
 "href='settings://security/privacy/location'>Axustes de localización…</a>"
 
 #: src/Geoclue2Dialog.vala:26
-msgid "Location Dialog"
-msgstr "Diálogo de localización"
-
-#: src/Geoclue2Dialog.vala:30
 #, c-format
 msgid "Allow %s to Access This Device's Location?"
 msgstr "Permitir a %s acceder á localización deste dispositivo?"
 
-#: src/Geoclue2Dialog.vala:62
+#: src/Geoclue2Dialog.vala:30
+msgid "Location Dialog"
+msgstr "Diálogo de localización"
+
+#: src/Geoclue2Dialog.vala:39
 msgid "Deny"
 msgstr "Non permitir"
 
-#: src/Geoclue2Dialog.vala:63
+#: src/Geoclue2Dialog.vala:41
 msgid "Allow"
 msgstr "Permitir"

@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 18:50+0000\n"
+"POT-Creation-Date: 2022-08-20 04:37+0000\n"
 "PO-Revision-Date: 2021-08-29 20:32+0000\n"
 "Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
-"Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/"
-"pantheon-agent-geoclue2/ar/>\n"
+"Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/pantheon-"
+"agent-geoclue2/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -50,18 +50,18 @@ msgstr ""
 "security/privacy/location'>إعدادات الموقع...</a>"
 
 #: src/Geoclue2Dialog.vala:26
-msgid "Location Dialog"
-msgstr "رسالة الموقع"
-
-#: src/Geoclue2Dialog.vala:30
 #, c-format
 msgid "Allow %s to Access This Device's Location?"
 msgstr "هل تسمح ل %s باستخدام موقع الجهاز؟"
 
-#: src/Geoclue2Dialog.vala:62
+#: src/Geoclue2Dialog.vala:30
+msgid "Location Dialog"
+msgstr "رسالة الموقع"
+
+#: src/Geoclue2Dialog.vala:39
 msgid "Deny"
 msgstr "ارفض"
 
-#: src/Geoclue2Dialog.vala:63
+#: src/Geoclue2Dialog.vala:41
 msgid "Allow"
 msgstr "وافق"

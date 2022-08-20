@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 18:50+0000\n"
+"POT-Creation-Date: 2022-08-20 04:37+0000\n"
 "PO-Revision-Date: 2017-06-17 09:28+0000\n"
 "Last-Translator: Rajeev Kumar <irajeevankumar@gmail.com>\n"
 "Language-Team: Tamil <https://l10n.elementary.io/projects/desktop/pantheon-"
@@ -48,19 +48,19 @@ msgid ""
 msgstr ""
 
 #: src/Geoclue2Dialog.vala:26
-#, fuzzy
-msgid "Location Dialog"
-msgstr "இருப்பிட அறிவிப்பு"
-
-#: src/Geoclue2Dialog.vala:30
 #, c-format
 msgid "Allow %s to Access This Device's Location?"
 msgstr "இந்த சாதனத்தின் இருப்பிடத்தை அணுகுவதற்கு %s ஐ அனுமதிக்கவா?"
 
-#: src/Geoclue2Dialog.vala:62
+#: src/Geoclue2Dialog.vala:30
+#, fuzzy
+msgid "Location Dialog"
+msgstr "இருப்பிட அறிவிப்பு"
+
+#: src/Geoclue2Dialog.vala:39
 msgid "Deny"
 msgstr "மறு"
 
-#: src/Geoclue2Dialog.vala:63
+#: src/Geoclue2Dialog.vala:41
 msgid "Allow"
 msgstr "அனுமதி"

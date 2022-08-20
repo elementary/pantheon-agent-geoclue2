@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Akan (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 18:50+0000\n"
+"POT-Creation-Date: 2022-08-20 04:37+0000\n"
 "PO-Revision-Date: 2017-06-19 13:53+0000\n"
 "Last-Translator: Lawrence Aberba <karabutaworld@gmail.com>\n"
 "Language-Team: Akan <karabutaworld@gmail.com>\n"
@@ -49,18 +49,18 @@ msgstr ""
 "security/privacy/location'>Beae Ho Nhyehyɛe Hɔ…</a>"
 
 #: src/Geoclue2Dialog.vala:26
-msgid "Location Dialog"
-msgstr "Beae Hokwan Pono"
-
-#: src/Geoclue2Dialog.vala:30
 #, c-format
 msgid "Allow %s to Access This Device's Location?"
 msgstr "Wopɛ Sɛ Woma %s Hokwan Ma Ehu Beae a Wowɔ?"
 
-#: src/Geoclue2Dialog.vala:62
+#: src/Geoclue2Dialog.vala:30
+msgid "Location Dialog"
+msgstr "Beae Hokwan Pono"
+
+#: src/Geoclue2Dialog.vala:39
 msgid "Deny"
 msgstr "Mma Hokwan"
 
-#: src/Geoclue2Dialog.vala:63
+#: src/Geoclue2Dialog.vala:41
 msgid "Allow"
 msgstr "Ma Hokwan"
