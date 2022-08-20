@@ -1,6 +1,6 @@
 /*-
- * Copyright (c) 2017 elementary LLC.
- * Copyright (C) 2017 David Hewitt <davidmhewitt@gmail.com>   
+ * Copyright 2017-2021 elementary, Inc.
+ *           2017 David Hewitt <davidmhewitt@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,69 +19,40 @@
  * Authored by: David Hewitt <davidmhewitt@gmail.com>
  */
 
-namespace Ag.Widgets {
-    public class Geoclue2Dialog : Gtk.Dialog {
+public class Ag.Widgets.Geoclue2Dialog : Granite.MessageDialog {
+    public Geoclue2Dialog (string message, string app_name, GLib.Icon? icon) {
+        Object (
+            image_icon: new ThemedIcon ("find-location"),
+            primary_text: _("Allow %s to Access This Device's Location?").printf (app_name),
+            secondary_text: message,
+            resizable: false,
+            skip_taskbar_hint: true,
+            title: _("Location Dialog")
+        );
 
-        public Geoclue2Dialog (string message, string app_name, GLib.Icon? icon) {
-            Object (title: _("Location Dialog"), window_position: Gtk.WindowPosition.CENTER, resizable: false, deletable: false, skip_taskbar_hint: true);
+        if (icon != null) {
+            badge_icon = icon;
+        }
+    }
 
-            set_keep_above (true);
+    construct {
+        var deny_button = (Gtk.Button) add_button (_("Deny"), Gtk.ResponseType.NO);
 
-            var heading = new Gtk.Label (_("Allow %s to Access This Device's Location?").printf (app_name));
-            heading.get_style_context ().add_class ("primary");
-            heading.max_width_chars = 50;
-            heading.wrap = true;
-            heading.xalign = 0;
+        var allow_button = (Gtk.Button) add_button (_("Allow"), Gtk.ResponseType.YES);
+        allow_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
-            var message_label = new Gtk.Label (message);
-            message_label.max_width_chars = 50;
-            message_label.use_markup = true;
-            message_label.wrap = true;
-            message_label.xalign = 0;
+        set_default (deny_button);
+        set_keep_above (true);
+    }
 
-            var image = new Gtk.Image.from_icon_name ("find-location", Gtk.IconSize.DIALOG);
+    public override void show_all () {
+        base.show_all ();
 
-            var overlay = new Gtk.Overlay ();
-            overlay.valign = Gtk.Align.START;
-            overlay.add (image);
-
-            if (icon != null) {
-                var overlay_image = new Gtk.Image.from_gicon (icon, Gtk.IconSize.LARGE_TOOLBAR);
-                overlay_image.halign = overlay_image.valign = Gtk.Align.END;
-                overlay.add_overlay (overlay_image);
-            }
-
-            var grid = new Gtk.Grid ();
-            grid.column_spacing = 12;
-            grid.row_spacing = 6;
-            grid.margin_start = grid.margin_end = 12;
-            grid.attach (overlay, 0, 0, 1, 3);
-            grid.attach (heading, 1, 0, 1, 1);
-            grid.attach (message_label, 1, 1, 1, 1);
-
-            var deny_button = (Gtk.Button)add_button (_("Deny"), Gtk.ResponseType.NO);
-            var allow_button = (Gtk.Button)add_button (_("Allow"), Gtk.ResponseType.YES);
-            allow_button.get_style_context ().add_class ("suggested-action");
-
-            set_default (deny_button);
-
-            get_content_area ().add (grid);
-
-            var action_area = get_action_area ();
-            action_area.margin_start = action_area.margin_end = 6;
-            action_area.margin_bottom = 6;
-            action_area.margin_top = 14;
+        var window = get_window ();
+        if (window == null) {
+            return;
         }
 
-        public override void show_all () {
-            base.show_all ();
-
-            var window = get_window ();
-            if (window == null) {
-                return;
-            }
-
-            window.focus (Gdk.CURRENT_TIME);
-        }
+        window.focus (Gdk.CURRENT_TIME);
     }
 }
