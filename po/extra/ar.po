@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 18:50+0000\n"
-"PO-Revision-Date: 2020-05-14 14:11+0000\n"
-"Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
+"PO-Revision-Date: 2021-08-29 20:32+0000\n"
+"Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/"
 "geoclue2-agent-extra/ar/>\n"
 "Language: ar\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:8
 msgid "Location Services Agent"
-msgstr ""
+msgstr "مفوض خدمات الموقع"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:9
 msgid "Approve or deny access to location services"
-msgstr ""
+msgstr "وافق أو ارفض على الوصول لخدمات الموقع"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:11
 msgid ""
@@ -35,18 +35,21 @@ msgid ""
 "level of access the application is requesting and either approve or deny its "
 "access to your current location."
 msgstr ""
+"يظهر مفوض خدمات الموقع في أي وقت يقوم تطبيق بطلب الإذن منك لاستخدام خدمات "
+"الموقع. من هذه الرسالة، ستتمكن من رؤية درجة الصلاحيات المطلوبة وأيضاً "
+"الموافقة على وصوله لموقعك الحالي أو رفضه."
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:17
 msgid "Updated translations"
-msgstr "ترجمات محدثة"
+msgstr "تحديثات على الترجمة"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:59
 msgid "elementary, Inc."
-msgstr "اليمينتري المتحدة."
+msgstr "elementary, Inc."
 
 #: data/io.elementary.desktop.agent-geoclue2.desktop.in.in:3
 msgid "Location Dialog"
-msgstr ""
+msgstr "رسالة الموقع"
 
 #: data/io.elementary.desktop.agent-geoclue2.desktop.in.in:5
 msgid "find-location"
