@@ -24,6 +24,7 @@ public class Ag.Widgets.Geoclue2Dialog : Granite.MessageDialog {
         Object (
            image_icon: new ThemedIcon ("find-location"),
            primary_text: _("Allow %s to Access This Device's Location?").printf (app_name),
+           secondary_text: message,
            resizable: false,
            skip_taskbar_hint: true,
            title: _("Location Dialog")
