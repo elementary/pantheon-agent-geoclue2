@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 18:50+0000\n"
+"POT-Creation-Date: 2022-08-20 04:37+0000\n"
 "PO-Revision-Date: 2020-05-29 13:11+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -34,13 +34,16 @@ msgid ""
 "level of access the application is requesting and either approve or deny its "
 "access to your current location."
 msgstr ""
-"当应用程序想要请求使用位置服务的权限时，位置服务助手便会弹出。 从此对话框中，您可以查看应用程序正在请求的访问级别，批准或拒绝其对您当前位置的访问。"
+"当应用程序想要请求使用位置服务的权限时，位置服务助手便会弹出。 从此对话框中，"
+"您可以查看应用程序正在请求的访问级别，批准或拒绝其对您当前位置的访问。"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:17
+#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:24
+#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:31
 msgid "Updated translations"
 msgstr "翻译更新"
 
-#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:59
+#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:73
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-geoclue2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 18:50+0000\n"
+"POT-Creation-Date: 2022-08-20 04:37+0000\n"
 "PO-Revision-Date: 2020-03-19 18:09+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@posteo.net>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -41,10 +41,12 @@ msgstr ""
 "access to your current location."
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:17
+#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:24
+#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:31
 msgid "Updated translations"
 msgstr "Updated translations"
 
-#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:59
+#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:73
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
