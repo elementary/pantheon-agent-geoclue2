@@ -22,12 +22,12 @@
 public class Ag.Widgets.Geoclue2Dialog : Granite.MessageDialog {
     public Geoclue2Dialog (string message, string app_name, GLib.Icon? icon) {
         Object (
-           image_icon: new ThemedIcon ("find-location"),
-           primary_text: _("Allow %s to Access This Device's Location?").printf (app_name),
-           secondary_text: message,
-           resizable: false,
-           skip_taskbar_hint: true,
-           title: _("Location Dialog")
+            image_icon: new ThemedIcon ("find-location"),
+            primary_text: _("Allow %s to Access This Device's Location?").printf (app_name),
+            secondary_text: message,
+            resizable: false,
+            skip_taskbar_hint: true,
+            title: _("Location Dialog")
         );
 
         if (icon != null) {
