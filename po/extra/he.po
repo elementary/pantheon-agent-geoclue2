@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-20 04:37+0000\n"
-"PO-Revision-Date: 2022-04-07 22:05+0000\n"
+"PO-Revision-Date: 2022-10-26 16:15+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/geoclue2-"
-"agent-extra/he/>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/"
+"geoclue2-agent-extra/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,7 +42,7 @@ msgstr ""
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:24
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:31
 msgid "Updated translations"
-msgstr "תרגומים עדכניים"
+msgstr "התרגומים עודכנו"
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:73
 msgid "elementary, Inc."
