@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-20 04:37+0000\n"
+"POT-Creation-Date: 2023-01-09 23:21+0000\n"
 "PO-Revision-Date: 2022-10-27 18:57+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
@@ -41,12 +41,13 @@ msgstr ""
 "затвердити або заборонити доступ до вашого поточного розташування."
 
 #: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:17
-#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:24
-#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:31
+#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:25
+#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:32
+#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:39
 msgid "Updated translations"
 msgstr "Оновлені переклади"
 
-#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:73
+#: data/io.elementary.desktop.agent-geoclue2.appdata.xml.in:81
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
@@ -54,6 +55,5 @@ msgstr "elementary, Inc."
 msgid "Location Dialog"
 msgstr "Запит розташування"
 
-#: data/io.elementary.desktop.agent-geoclue2.desktop.in.in:5
-msgid "find-location"
-msgstr "find-location"
+#~ msgid "find-location"
+#~ msgstr "find-location"
